@@ -1,0 +1,1510 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>solme Brand Book | Pham Thi My Duyen</title><meta name="description" content="Brand book for solme, a handmade fabric bag brand concept by Pham Thi My Duyen (Mely): story, logo, colour palette, typography, labels, packaging and social content."><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&display=swap">
+<style>
+/* Layout: sổ tay thương hiệu một cột, mỗi phần mở bằng dải vải caro; mockup in/may ở giữa, thông số kỹ thuật bên cạnh */
+:root{
+  /* màu thương hiệu: giữ nguyên ở cả hai chế độ sáng/tối */
+  --plum:#6B2D4A;      /* Mận Solme */
+  --rose:#E7A4B6;      /* Hồng Solme */
+  --blush:#F8DDE4;     /* Hồng sữa */
+  --milk:#FDF7F8;      /* Trắng sữa */
+  --apricot:#E3963A;   /* Nắng mơ */
+  --cocoa:#2E1822;     /* Nâu mận đậm */
+  /* bề mặt trang */
+  --bg:#FDF7F8; --fg:#2E1822; --muted:#7A5C68; --line:#EBD3DA; --card:#FFFFFF; --soft:#F8E8ED; --accent:#6B2D4A; --accent-ink:#FFFFFF;
+  --f-display:"Fraunces", "Georgia", "Times New Roman", serif;
+  --f-body:"Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --bg:#1C1016; --fg:#F7E7ED; --muted:#C2A1AE; --line:#3D2531; --card:#26161E; --soft:#2F1B25; --accent:#E7A4B6; --accent-ink:#2E1822; color-scheme:dark }
+}
+:root[data-theme="dark"]{ --bg:#1C1016; --fg:#F7E7ED; --muted:#C2A1AE; --line:#3D2531; --card:#26161E; --soft:#2F1B25; --accent:#E7A4B6; --accent-ink:#2E1822; color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.6;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+h1,h2,h3{font-family:var(--f-display);font-variation-settings:"SOFT" 100,"WONK" 1;text-wrap:balance;margin:0;line-height:1.1;font-weight:600}
+h2{font-size:clamp(28px,4.4vw,44px)}
+h3{font-size:20px;font-weight:600}
+p{margin:0;max-width:65ch}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.stack{display:flex;flex-direction:column;gap:12px}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.grid>*{min-width:0}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.tnum{font-variant-numeric:tabular-nums}
+
+/* vải caro */
+.ging-rose{background-color:var(--milk);background-image:linear-gradient(90deg,rgba(231,164,182,.55) 50%,transparent 50%),linear-gradient(rgba(231,164,182,.55) 50%,transparent 50%);background-size:18px 18px}
+.ging-plum{background-color:#F3E3E9;background-image:linear-gradient(90deg,rgba(107,45,74,.45) 50%,transparent 50%),linear-gradient(rgba(107,45,74,.45) 50%,transparent 50%);background-size:14px 14px}
+.dots{background-color:var(--milk);background-image:radial-gradient(circle,var(--plum) 2.2px,transparent 2.8px),radial-gradient(circle,var(--plum) 2.2px,transparent 2.8px);background-size:28px 28px;background-position:0 0,14px 14px}
+.stripe{background:repeating-linear-gradient(90deg,var(--rose) 0 14px,var(--apricot) 14px 28px)}
+
+/* hero */
+.hero{padding-block:40px 56px;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(64px,13vw,150px);font-weight:500;color:var(--accent);letter-spacing:-.02em;line-height:.9}
+.hero .tag{font-family:var(--f-display);font-style:italic;font-size:clamp(20px,2.6vw,28px);margin-top:14px}
+.hero-card{aspect-ratio:4/5;max-width:100%;border-radius:18px;position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
+.hero-card svg{width:78%;height:auto;margin-bottom:-2px}
+.meta-row{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:22px}
+.meta-row div{display:flex;flex-direction:column}
+.meta-row b{font-size:15px}
+
+section{padding-block:64px;border-bottom:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:200px 1fr;gap:24px;margin-bottom:32px;align-items:start}
+.sec-head .lede{margin-top:12px;color:var(--muted);font-size:16px}
+.band{height:10px;border-radius:5px;margin-bottom:18px;width:72px}
+
+/* bảng */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--soft)}
+tr:last-child td{border-bottom:0}
+
+/* logo */
+.logo-tile{border-radius:14px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;max-width:100%;position:relative}
+.logo-tile .cap{position:absolute;left:14px;bottom:10px;font-size:12px;opacity:.75}
+.wordmark{text-transform:lowercase;font-family:var(--f-display);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144;font-weight:500;letter-spacing:-.02em;line-height:1}
+.mono{width:96px;height:96px;border-radius:50%;display:grid;place-items:center;position:relative}
+.mono::after{content:"";position:absolute;inset:7px;border-radius:50%;border:1.5px dashed currentColor;opacity:.7}
+
+/* màu */
+.swatch{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+.swatch .chip{height:110px;display:flex;align-items:flex-end;padding:10px 12px;font-size:12px;font-weight:600}
+.swatch .info{padding:12px 14px;font-size:13px}
+.ratio{display:flex;height:22px;border-radius:6px;overflow:hidden;margin-top:14px}
+
+/* chữ */
+.type-spec{display:grid;grid-template-columns:180px 1fr;gap:16px;padding-block:18px;border-top:1px solid var(--line);align-items:baseline}
+.type-spec:first-child{border-top:0}
+
+/* mockup nhãn */
+.mock-stage{border-radius:14px;padding:28px 18px;display:flex;align-items:center;justify-content:center;min-height:240px;position:relative}
+.woven{background:var(--plum);color:var(--rose);width:220px;max-width:100%;aspect-ratio:50/15;border-radius:3px;display:flex;align-items:center;justify-content:center;gap:12px;box-shadow:0 2px 0 rgba(0,0,0,.15);position:relative;
+  background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 3px)}
+.woven .wordmark{font-size:34px;color:var(--rose)}
+.woven::before,.woven::after{content:"";position:absolute;top:6px;bottom:6px;width:0;border-left:1.5px dashed rgba(231,164,182,.6)}
+.woven::before{left:10px}.woven::after{right:10px}
+.care{background:#FFFFFF;color:#3A2530;width:150px;padding:16px 14px 20px;border-radius:2px;font-size:11px;line-height:1.55;box-shadow:0 2px 10px rgba(46,24,34,.12);border-top:10px solid var(--rose)}
+.care .wordmark{font-size:22px;color:var(--plum);display:block;margin-bottom:6px}
+.care hr{border:0;border-top:1px dashed #D8B9C4;margin:8px 0}
+.hangtag{width:170px;aspect-ratio:55/90;background:var(--plum);color:var(--milk);border-radius:10px 10px 6px 6px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;box-shadow:0 3px 12px rgba(46,24,34,.18)}
+.hangtag::before{content:"";position:absolute;top:14px;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--bg);box-shadow:inset 0 0 0 2px var(--rose)}
+.hangtag .wordmark{font-size:44px;color:var(--rose)}
+.hangtag.back{background:var(--milk);color:#3A2530;justify-content:flex-start;padding:40px 16px 16px;align-items:stretch;font-size:12px;gap:10px}
+.hangtag.back .field{border-bottom:1px dashed #C9A3B2;padding-bottom:3px;display:flex;justify-content:space-between}
+.hangtag.back .field span{color:#9A7686}
+.card-ty{width:300px;max-width:100%;aspect-ratio:148/105;background:#FFFFFF;color:#3A2530;border-radius:4px;box-shadow:0 3px 14px rgba(46,24,34,.15);padding:18px 20px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.card-ty .big{font-family:var(--f-display);font-style:italic;font-size:22px;color:var(--plum);line-height:1.05;font-variation-settings:"SOFT" 100,"WONK" 1}
+.card-ty .edge{position:absolute;right:0;top:0;bottom:0;width:26px}
+.sticker{width:130px;height:130px;border-radius:50%;background:var(--rose);color:var(--plum);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;box-shadow:0 2px 8px rgba(46,24,34,.15)}
+.sticker::after{content:"";position:absolute;inset:8px;border-radius:50%;border:1.5px dashed var(--plum);opacity:.5}
+.sticker .wordmark{font-size:36px}
+.sticker small{font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+.dim{font-size:11px;color:var(--muted);letter-spacing:.06em;position:absolute;bottom:8px;right:12px}
+
+/* hộp */
+.box-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px}
+.box{aspect-ratio:35/28;max-width:100%;border-radius:8px;position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;overflow:hidden}
+.box.kraft{background:#C9A47E;background-image:radial-gradient(rgba(90,60,30,.12) 1px,transparent 1.4px);background-size:6px 6px;color:var(--plum)}
+.box.kraft .wordmark{font-size:64px}
+.box .lid-msg{background:var(--milk);color:var(--plum);padding:14px 22px;border-radius:6px;text-align:center;font-family:var(--f-display);font-style:italic;font-size:22px;line-height:1.2;box-shadow:0 2px 8px rgba(46,24,34,.12)}
+.box .corner{position:absolute;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:14px;counter-reset:s}
+.step{border-top:2px solid var(--accent);padding-top:12px;counter-increment:s}
+.step::before{content:counter(s);font-family:var(--f-display);font-size:28px;color:var(--accent);display:block;line-height:1;margin-bottom:6px}
+
+/* social */
+.phone{max-width:380px;width:100%;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:18px 14px;box-shadow:0 10px 30px rgba(46,24,34,.08)}
+.ig-head{display:flex;gap:14px;align-items:center}
+.ig-av{width:72px;height:72px;border-radius:50%;flex:none;display:grid;place-items:center;background:var(--rose);color:var(--plum);box-shadow:0 0 0 3px var(--card),0 0 0 5px var(--apricot)}
+.ig-av .wordmark{font-size:24px}
+.ig-stats{display:flex;gap:16px;font-size:13px}
+.ig-stats b{display:block;font-size:15px}
+.ig-bio{font-size:13px;margin-top:12px;line-height:1.5}
+.ig-hl{display:flex;gap:10px;margin-top:14px;overflow-x:auto;padding-bottom:4px}
+.ig-hl div{flex:none;width:58px;text-align:center;font-size:10px}
+.ig-hl i{display:block;width:52px;height:52px;border-radius:50%;margin:0 auto 4px;border:2px solid var(--line)}
+.ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:14px}
+.tile{aspect-ratio:4/5;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;padding:6px}
+.tile .t{font-family:var(--f-display);font-weight:600;font-size:13px;line-height:1.1;font-variation-settings:"SOFT" 100,"WONK" 1}
+.tile .reel{position:absolute;top:5px;right:6px;width:0;height:0;border-left:7px solid #fff;border-top:4.5px solid transparent;border-bottom:4.5px solid transparent;filter:drop-shadow(0 0 2px rgba(0,0,0,.4))}
+.tile svg{width:80%;height:auto}
+
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--soft);color:var(--fg);letter-spacing:.02em}
+.pillar-bar{display:flex;height:34px;border-radius:8px;overflow:hidden;font-size:12px;font-weight:600}
+.pillar-bar div{display:flex;align-items:center;padding-left:10px;white-space:nowrap;overflow:hidden}
+
+.script{display:flex;flex-direction:column;gap:12px}
+.script ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px;font-size:14px}
+.script .hook{font-family:var(--f-display);font-style:italic;font-size:19px;line-height:1.3;color:var(--accent)}
+.kv{display:flex;flex-wrap:wrap;gap:6px}
+
+.cap-box{background:var(--soft);border-radius:12px;padding:16px;font-size:14px;white-space:pre-line;position:relative}
+.copy{font:600 12px var(--f-body);border:1px solid var(--line);background:var(--card);color:var(--fg);padding:6px 12px;border-radius:999px;cursor:pointer;align-self:flex-start}
+.copy:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.do-dont{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.do-dont ul{margin:8px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.note{border-left:3px solid var(--apricot);padding:10px 14px;background:var(--soft);border-radius:0 10px 10px 0;font-size:14px}
+
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;font-family:var(--f-display);font-variation-settings:"SOFT" 100,"WONK" 1;font-size:clamp(26px,4vw,40px);line-height:1}
+.formula .part{display:flex;flex-direction:column;gap:6px}
+.formula .part small{font-family:var(--f-body);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+.formula .op{color:var(--muted);font-weight:300}
+.formula .hl{color:var(--accent);font-weight:600}
+.vm{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:20px;margin-top:36px}
+.vm .panel{padding:28px;display:flex;flex-direction:column;gap:14px}
+.vm .statement{font-family:var(--f-display);font-variation-settings:"SOFT" 100,"WONK" 1;font-size:clamp(20px,2.4vw,25px);line-height:1.35;font-weight:500}
+.vm .vision{background:var(--plum);border-color:var(--plum);color:var(--milk)}
+.vm .vision .eyebrow{color:var(--rose)}
+.vm .vision .small{color:#E9CBD6}
+.occasions{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:12px;margin-top:16px}
+.occasions>div{background:var(--soft);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:2px}
+.occasions span{font-size:13px;color:var(--muted)}
+.values{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:20px;margin-top:20px}
+.values>div{border-top:2px solid var(--accent);padding-top:12px;display:flex;flex-direction:column;gap:6px}
+footer{padding-block:40px 56px;font-size:13px;color:var(--muted)}
+
+@media (max-width:760px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-card{max-width:360px}
+  .sec-head{grid-template-columns:1fr;gap:6px}
+  .type-spec{grid-template-columns:1fr;gap:4px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .tile{transition:transform .2s}
+  .tile:hover{transform:scale(1.03)}
+}
+</style>
+
+<!-- hoa văn dùng chung cho các hình túi SVG -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <pattern id="pg-rose" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#FDF7F8"/><rect width="6" height="12" fill="#E7A4B6" opacity=".55"/><rect width="12" height="6" fill="#E7A4B6" opacity=".55"/>
+    </pattern>
+    <pattern id="pg-plum" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#F3E3E9"/><rect width="5" height="10" fill="#6B2D4A" opacity=".45"/><rect width="10" height="5" fill="#6B2D4A" opacity=".45"/>
+    </pattern>
+    <pattern id="pg-dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#FDF7F8"/><circle cx="4" cy="4" r="1.6" fill="#6B2D4A"/><circle cx="12" cy="12" r="1.6" fill="#6B2D4A"/>
+    </pattern>
+  </defs>
+</svg>
+
+<a href="/" style="position:absolute;top:6px;left:12px;z-index:10;font:600 12px 'Be Vietnam Pro',system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:#6B2D4A;background:#FDF7F8;border:1.5px solid #6B2D4A;padding:6px 12px;border-radius:999px">&larr; Portfolio</a>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="stack">
+      <span class="eyebrow">Sổ tay thương hiệu · bản 1.1 · 10/2026</span>
+      <h1>solme</h1>
+      <p class="tag">Mỗi chiếc túi, một tâm hồn. Đi đâu cũng hợp.</p>
+      <p class="muted" style="font-size:16px;margin-top:6px">Túi vải may tay từng chiếc: vải caro, chấm thêu, teddy mềm và thêu tên theo yêu cầu. Tên <b>solme</b> ghép từ <b>soul</b> (tâm hồn) và <b>Mely</b>, người sáng lập. Mỗi chiếc túi mang một phần tâm hồn của người may và của người mang nó đi.</p>
+      <div class="meta-row small">
+        <div><span class="muted">Instagram / TikTok</span><b>@solme.bags</b></div>
+        <div><span class="muted">Khách chính</span><b>Nữ 18–30, sinh viên & dân văn phòng</b></div>
+        <div><span class="muted">Giá</span><b class="tnum">150k – 450k</b></div>
+      </div>
+    </div>
+    <div class="hero-card ging-rose" aria-label="Minh hoạ túi tote vải caro hồng có nhãn Solme">
+      <svg viewBox="0 0 200 210" role="img" aria-label="Túi tote caro">
+        <path d="M62 70 C62 20 92 14 100 14 C108 14 138 20 138 70" fill="none" stroke="#6B2D4A" stroke-width="9" stroke-linecap="round"/>
+        <rect x="30" y="62" width="140" height="148" rx="6" fill="url(#pg-plum)" stroke="#6B2D4A" stroke-width="2"/>
+        <rect x="80" y="62" width="40" height="13" rx="2" fill="#6B2D4A"/>
+        <text x="100" y="72" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="10" fill="#E7A4B6">solme</text>
+        <text x="100" y="150" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-style="italic" font-size="22" fill="#6B2D4A">Linh</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- Câu chuyện, tầm nhìn, sứ mệnh -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band" style="background:var(--plum)"></div><span class="eyebrow">Cốt lõi thương hiệu</span></div>
+      <div>
+        <h2>Câu chuyện, tầm nhìn và sứ mệnh</h2>
+        <p class="lede">Đây là phần cần đọc trước nhất. Mọi thứ phía dưới, từ màu sắc, nhãn mác đến từng caption, đều phải nói lên cùng một điều này.</p>
+      </div>
+    </div>
+    <div class="formula" aria-label="soul cộng Mely thành solme">
+      <div class="part"><span>so<span class="op">u</span>l</span><small>Soul · tâm hồn</small></div>
+      <span class="op">+</span>
+      <div class="part"><span>me<span class="op">ly</span></span><small>Mely · người sáng lập</small></div>
+      <span class="op">=</span>
+      <div class="part"><span class="hl wordmark">solme</span><small>Túi vải có tâm hồn</small></div>
+    </div>
+    <p style="margin-top:22px;font-size:16px">Mely bắt đầu solme từ chiếc máy may ở nhà, với ý nghĩ rằng đồ thủ công thì phải mang theo người làm ra nó. Mỗi chiếc túi được một người may từ đầu đến cuối và ký tên trên thẻ treo. Khi khách thêu tên mình lên túi, chiếc túi có thêm phần tâm hồn của chủ nhân mới.</p>
+    <div class="vm">
+      <div class="panel vision">
+        <span class="eyebrow">Tầm nhìn · Vision</span>
+        <p class="statement">Trở thành chiếc túi vải handmade mà người trẻ Việt Nam với tay lấy đầu tiên mỗi khi ra khỏi nhà, dù đi học, đi làm, đi chơi hay đi xa.</p>
+        <p class="small">Mốc 2030: 50.000 chiếc túi solme đang theo chủ nhân đi khắp nơi mỗi ngày, cùng một xưởng may nhỏ của riêng solme tạo việc làm ổn định cho 10 thợ may.</p>
+      </div>
+      <div class="panel">
+        <span class="eyebrow">Sứ mệnh · Mission</span>
+        <p class="statement">Làm ra những chiếc túi vải tiện lợi cho mọi dịp: gọn, nhẹ, đựng vừa đồ dùng thật và hợp với mọi bộ đồ, để khách chỉ cần một chiếc solme là đi được bất cứ đâu.</p>
+        <p class="small muted">Thực hiện qua ba việc: thiết kế từ nhu cầu thật (ngăn, khoá, độ dài quai), may tay kỹ từng chiếc để dùng bền, và thêu tên để túi thành của riêng mỗi người.</p>
+      </div>
+    </div>
+    <h3 style="margin-top:40px">Giá trị cốt lõi</h3>
+    <div class="values">
+      <div><b>Có tâm hồn</b><p class="small muted">Không may hàng loạt vô danh. Túi nào cũng có tên người may và câu chuyện riêng.</p></div>
+      <div><b>Tỉ mỉ</b><p class="small muted">Mỗi túi qua 2 lần kiểm tra đường may trước khi dán sticker niêm phong.</p></div>
+      <div><b>Tiện lợi</b><p class="small muted">Mỗi chi tiết phải có lý do: ngăn để điện thoại, khoá kéo giữ đồ, quai đủ dài để đeo vai khi mặc áo khoác.</p></div>
+      <div><b>Bền lâu</b><p class="small muted">Vải dày, lót canvas, chỉ tốt. Đi mưa, đi xa, nhét đầy đồ vẫn giữ dáng.</p></div>
+      <div><b>Ấm áp</b><p class="small muted">Nhắn tin, đóng gói và viết thiệp như đang gửi quà cho một người bạn.</p></div>
+    </div>
+    <h3 style="margin-top:40px">Một chiếc túi cho mọi dịp</h3>
+    <div class="occasions">
+      <div><b>Đi học</b><span>Sách, laptop 14", bình nước</span></div>
+      <div><b>Đi làm</b><span>Laptop, sạc, sổ tay, hộp cơm</span></div>
+      <div><b>Cà phê, hẹn bạn</b><span>Ví, son, điện thoại, tai nghe</span></div>
+      <div><b>Đi chợ, siêu thị</b><span>Gập gọn trong túi, thay túi nilon</span></div>
+      <div><b>Tập gym, đi bơi</b><span>Ngăn lót chống thấm cho đồ ướt</span></div>
+      <div><b>Du lịch</b><span>Làm túi phụ khi lên máy bay, đi phố</span></div>
+      <div><b>Đi tiệc nhỏ</b><span>Pouch đeo chéo, hợp váy và áo dài</span></div>
+      <div><b>Làm quà</b><span>Thêu tên, hộp quà sẵn, không cần gói thêm</span></div>
+    </div>
+    <h3 style="margin-top:40px">Chuẩn tiện lợi cho mọi mẫu túi</h3>
+    <div class="tbl-wrap" style="margin-top:16px">
+      <table>
+        <thead><tr><th>Chi tiết</th><th>Tiêu chuẩn solme</th><th>Để làm gì</th></tr></thead>
+        <tbody>
+          <tr><td>Ngăn trong</td><td>Ít nhất 1 ngăn khoá kéo + 1 ngăn mở</td><td>Điện thoại, chìa khoá không bị lạc dưới đáy</td></tr>
+          <tr><td>Quai</td><td>Tote dài 60cm, pouch có dây đeo chéo tháo rời</td><td>Đeo vai được cả khi mặc áo khoác dày</td></tr>
+          <tr><td>Miệng túi</td><td>Khoá kéo hoặc nút nam châm</td><td>Đi xe máy, đi đông người vẫn yên tâm</td></tr>
+          <tr><td>Móc chìa khoá</td><td>Dây móc bên trong miệng túi</td><td>Lấy chìa trong 1 giây</td></tr>
+          <tr><td>Gập gọn</td><td>Tote gập vừa lòng bàn tay, có dây buộc</td><td>Luôn có sẵn một chiếc túi trong cốp xe, vali</td></tr>
+          <tr><td>Lót</td><td>Canvas dày, có loại chống thấm</td><td>Đựng bình nước, đồ tập mà không thấm ra ngoài</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:28px"><b>Câu nói nhận diện:</b> "solme: mỗi chiếc túi, một tâm hồn. Đi đâu cũng hợp." Câu này xuất hiện ở bio, thẻ treo, cạnh hộp và cuối mỗi caption mở bán.</p>
+  </div>
+</section>
+
+<!-- 0. Học từ Fearless -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band stripe"></div><span class="eyebrow">Phần 0</span></div>
+      <div>
+        <h2>Học gì từ Fearless Bags</h2>
+        <p class="lede">Fearless (Tây Ban Nha, 134K người theo dõi) thắng nhờ ba thứ: chất liệu dễ nhận ra, video quay tay đang may và đóng gói, và thêu tên cá nhân hoá. Solme giữ lại công thức đó nhưng có câu chuyện và bảng màu riêng, để không thành bản sao.</p>
+      </div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Fearless đang làm</th><th>Vì sao hiệu quả</th><th>Solme làm thế nào</th></tr></thead>
+        <tbody>
+          <tr><td>Vải caro, teddy chấm thêu, tông hồng – mận</td><td>Nhìn một ô ảnh là biết của shop nào</td><td>Chỉ dùng 3 dòng vải: <b>caro hồng</b>, <b>caro mận</b>, <b>teddy chấm mận</b>. Thêm màu mơ làm điểm nhấn riêng.</td></tr>
+          <tr><td>Bán theo set: tote + pouch + túi bình nước cùng vải</td><td>Tăng giá trị đơn, dễ chụp ảnh đẹp</td><td>Set "Hộp Solme" 3 món, rẻ hơn mua lẻ 12%.</td></tr>
+          <tr><td>Thêu tên viết tay lên túi</td><td>Thành quà tặng, khách hay quay video khoe</td><td>Thêu tên +30k, chỉ màu mận hoặc mơ. Đặt tên trong ghi chú đơn.</td></tr>
+          <tr><td>Video không lời: tay cầm túi, xếp đồ, đóng hộp</td><td>Dễ xem hết, thuật toán đẩy mạnh</td><td>70% nội dung là Reels dọc 7–15 giây, quay từ trên xuống trên bàn gỗ.</td></tr>
+          <tr><td>Thiệp "tienes muy buen gusto" (bạn có gu đấy)</td><td>Khách chụp lại thiệp và đăng story</td><td>Thiệp <b>"Cảm ơn bạn đã mang solme đi cùng"</b> kèm mã giảm 10% cho đơn sau.</td></tr>
+          <tr><td>Highlight: Reseñas, Press, Pedidos, Taller</td><td>Khách mới tự tìm được bằng chứng uy tín</td><td>Highlight: Feedback, Đóng đơn, Xưởng may, Thêu tên, Bảng size.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 1. Nền tảng -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band ging-rose"></div><span class="eyebrow">Phần 1 · Identity</span></div>
+      <div>
+        <h2>Nền tảng thương hiệu</h2>
+        <p class="lede">Viết một lần, dùng cho mọi chú thích ảnh, bao bì và câu trả lời tin nhắn.</p>
+      </div>
+    </div>
+    <div class="grid g3">
+      <div class="panel stack">
+        <span class="eyebrow">Định vị</span>
+        <p>Túi vải may tay <b>tiện cho mọi dịp</b>: đi học, đi làm, đi chơi, đi xa hay làm quà đều hợp. Giá mà sinh viên vẫn mua được.</p>
+      </div>
+      <div class="panel stack">
+        <span class="eyebrow">Khách hàng: "Linh, 23 tuổi"</span>
+        <p>Nhân viên văn phòng năm đầu. Lướt TikTok buổi tối, thích đồ hồng nhạt kiểu Hàn, hay mua quà sinh nhật cho bạn thân. Chi 200–400k cho một món quà.</p>
+      </div>
+      <div class="panel stack">
+        <span class="eyebrow">Lời hứa</span>
+        <p>Mỗi túi do một người may từ đầu đến cuối, ký tên trên thẻ treo. Lỗi đường may đổi mới trong 30 ngày.</p>
+      </div>
+    </div>
+    <div class="grid g2" style="margin-top:20px">
+      <div class="panel stack">
+        <span class="eyebrow">Tính cách (3 từ)</span>
+        <div class="kv"><span class="pill">Dịu dàng</span><span class="pill">Tỉ mỉ</span><span class="pill">Tinh nghịch</span></div>
+        <p class="small muted">Giống cô bạn khéo tay trong nhóm: nói chuyện dễ thương nhưng làm việc rất kỹ.</p>
+      </div>
+      <div class="panel stack">
+        <span class="eyebrow">Giọng văn</span>
+        <p class="small">Xưng <b>"Solme"</b> hoặc <b>"tụi mình"</b>, gọi khách là <b>"bạn"</b>. Câu ngắn, có 1 emoji tối đa mỗi câu (🌷 🍑 🧵 🎀).</p>
+      </div>
+    </div>
+    <div class="do-dont" style="margin-top:20px">
+      <div class="panel">
+        <span class="eyebrow">Nên viết</span>
+        <ul class="small">
+          <li>"Túi đã may xong, Solme gói cho bạn ngay chiều nay nha 🎀"</li>
+          <li>"Vải caro này mềm hơn sau mỗi lần giặt."</li>
+          <li>"Bạn muốn thêu tên ai? Ghi vào phần ghi chú là được."</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <span class="eyebrow">Tránh viết</span>
+        <ul class="small">
+          <li>"SIÊU PHẨM HOT HIT GIÁ SỐC!!!" (ồn ào, mất chất thủ công)</li>
+          <li>"Ib shop để được tư vấn" (lạnh, kiểu bán sỉ)</li>
+          <li>"Hàng cao cấp nhập khẩu" (sai sự thật, túi Solme là hàng may tay)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. Logo -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band ging-plum"></div><span class="eyebrow">Phần 1 · Identity</span></div>
+      <div>
+        <h2>Logo</h2>
+        <p class="lede">Chữ viết thường, nét có chân mềm. Chữ "s" đầu tiên được tách ra làm monogram, nét cong như một sợi chỉ đang khâu. In, thêu hay dệt nhãn đều rõ nét.</p>
+      </div>
+    </div>
+    <div class="grid g3">
+      <div class="logo-tile" style="background:var(--milk);color:var(--plum);border:1px solid var(--line)">
+        <span class="wordmark" style="font-size:88px">Solme</span>
+        <span class="cap">Logo chính · mận trên trắng sữa</span>
+      </div>
+      <div class="logo-tile" style="background:var(--plum);color:var(--rose)">
+        <span class="wordmark" style="font-size:88px">Solme</span>
+        <span class="cap">Bản đảo màu · nhãn dệt, thẻ treo</span>
+      </div>
+      <div class="logo-tile ging-rose" style="color:var(--plum)">
+        <div class="mono" style="background:var(--milk)"><span class="wordmark" style="font-size:52px">s</span></div>
+        <span class="cap" style="background:var(--milk);padding:2px 6px;border-radius:4px;opacity:1">Monogram "s" · avatar, sticker, khuy kéo</span>
+      </div>
+      <div class="logo-tile" style="background:var(--rose);color:var(--plum)">
+        <div style="text-align:center">
+          <span class="wordmark" style="font-size:64px;display:block">Solme</span>
+          <span style="font-size:11px;letter-spacing:.32em;text-transform:uppercase;font-weight:600">handmade with soul</span>
+        </div>
+        <span class="cap">Bản xếp chồng · hộp, thiệp</span>
+      </div>
+      <div class="logo-tile" style="background:var(--cocoa);color:var(--apricot)">
+        <span class="wordmark" style="font-size:88px">Solme</span>
+        <span class="cap" style="color:var(--milk)">Bản mơ · chỉ thêu trên vải tối</span>
+      </div>
+      <div class="panel stack small">
+        <span class="eyebrow">Quy tắc dùng</span>
+        <p>Khoảng trống xung quanh logo ít nhất bằng chiều cao chữ "o".</p>
+        <p>Cỡ nhỏ nhất: rộng 18mm khi in, 12mm khi dệt nhãn. Nhỏ hơn thì dùng monogram "s".</p>
+        <p>Không kéo giãn, không đổ bóng, không viết hoa thành "SOLME".</p>
+        <p>File gửi xưởng: vector (.ai/.svg), chữ đã chuyển thành nét (outline).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Màu -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band" style="background:var(--plum)"></div><span class="eyebrow">Phần 1 · Identity</span></div>
+      <div>
+        <h2>Bảng màu</h2>
+        <p class="lede">Hồng là sự dịu dàng, mận là chiều sâu của tâm hồn, mơ là chút nắng ấm (trong tiếng Tây Ban Nha, "sol" nghĩa là mặt trời). Màu vải nên chọn gần các mã này nhất có thể.</p>
+      </div>
+    </div>
+    <div class="grid g3">
+      <div class="swatch"><div class="chip" style="background:var(--plum);color:var(--rose)">Mận Solme</div><div class="info tnum"><b>#6B2D4A</b><br>CMYK 35 90 45 40<br><span class="muted">Logo, chữ, nhãn dệt, hộp</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--rose);color:var(--plum)">Hồng Solme</div><div class="info tnum"><b>#E7A4B6</b><br>CMYK 5 42 12 0<br><span class="muted">Sticker, avatar, caro hồng</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--blush);color:var(--plum)">Hồng sữa</div><div class="info tnum"><b>#F8DDE4</b><br>CMYK 2 16 5 0<br><span class="muted">Giấy pelure, nền ảnh</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--milk);color:var(--plum);border-bottom:1px solid var(--line)">Trắng sữa</div><div class="info tnum"><b>#FDF7F8</b><br>CMYK 0 3 1 0<br><span class="muted">Nền thiệp, thẻ treo mặt sau</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--apricot);color:var(--cocoa)">Nắng mơ</div><div class="info tnum"><b>#E3963A</b><br>CMYK 8 45 85 0<br><span class="muted">Điểm nhấn: chỉ thêu, giá, nút</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--cocoa);color:var(--rose)">Nâu mận đậm</div><div class="info tnum"><b>#2E1822</b><br>CMYK 50 80 55 75<br><span class="muted">Chữ dài trên nền sáng</span></div></div>
+    </div>
+    <p class="eyebrow" style="margin-top:28px">Tỉ lệ dùng trên feed</p>
+    <div class="ratio" role="img" aria-label="Tỉ lệ màu: trắng sữa và hồng sữa 50%, hồng 25%, mận 18%, mơ 7%">
+      <div style="flex:30;background:var(--milk);border:1px solid var(--line)"></div>
+      <div style="flex:20;background:var(--blush)"></div>
+      <div style="flex:25;background:var(--rose)"></div>
+      <div style="flex:18;background:var(--plum)"></div>
+      <div style="flex:7;background:var(--apricot)"></div>
+    </div>
+    <p class="small muted" style="margin-top:8px">Nền sáng 50% · hồng 25% · mận 18% · mơ 7%. Màu mơ chỉ để nhấn, đừng làm màu nền.</p>
+  </div>
+</section>
+
+<!-- 4. Chữ + hoa văn -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band dots"></div><span class="eyebrow">Phần 1 · Identity</span></div>
+      <div>
+        <h2>Font chữ và hoa văn</h2>
+        <p class="lede">Hai font miễn phí trên Google Fonts, đủ dấu tiếng Việt, dùng được trong Canva.</p>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="type-spec">
+        <div><span class="eyebrow">Tiêu đề</span><br><span class="small muted">Fraunces · SemiBold, bật "Soft"</span></div>
+        <div style="font-family:var(--f-display);font-size:clamp(28px,4vw,40px);font-weight:600;font-variation-settings:'SOFT' 100,'WONK' 1;line-height:1.15">Túi mới về, thơm mùi vải mới</div>
+      </div>
+      <div class="type-spec">
+        <div><span class="eyebrow">Chữ nghiêng nhấn</span><br><span class="small muted">Fraunces Italic · thiệp, câu hook</span></div>
+        <div style="font-family:var(--f-display);font-style:italic;font-size:26px;color:var(--accent)">Cảm ơn bạn đã mang solme đi cùng</div>
+      </div>
+      <div class="type-spec">
+        <div><span class="eyebrow">Nội dung</span><br><span class="small muted">Be Vietnam Pro · Regular / SemiBold</span></div>
+        <div>Vải cotton caro 100%, lót canvas 12oz. Kích thước 38 × 34 × 10cm, quai dài 60cm, đựng vừa laptop 14 inch.</div>
+      </div>
+      <div class="type-spec">
+        <div><span class="eyebrow">Nhãn nhỏ</span><br><span class="small muted">Be Vietnam Pro · SemiBold, IN HOA, giãn chữ 12%</span></div>
+        <div class="eyebrow" style="color:var(--fg)">May tay · Lô 04/2026</div>
+      </div>
+    </div>
+    <div class="grid g3" style="margin-top:20px">
+      <div class="stack"><div class="ging-rose" style="height:120px;border-radius:12px"></div><b>Caro hồng</b><span class="small muted">Ô 6mm · tote, pouch, túi bình nước</span></div>
+      <div class="stack"><div class="ging-plum" style="height:120px;border-radius:12px"></div><b>Caro mận</b><span class="small muted">Ô 5mm · túi laptop, túi đeo vai</span></div>
+      <div class="stack"><div class="dots" style="height:120px;border-radius:12px;border:1px solid var(--line)"></div><b>Teddy chấm thêu</b><span class="small muted">Lông cừu nhân tạo, chấm thêu mận · hàng thu đông</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Label -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band" style="background:var(--rose)"></div><span class="eyebrow">Phần 2 · Label & box</span></div>
+      <div>
+        <h2>Nhãn và thẻ</h2>
+        <p class="lede">Năm món đi kèm mỗi chiếc túi. Kích thước ghi bên dưới là kích thước thật để gửi xưởng in.</p>
+      </div>
+    </div>
+    <div class="grid g3">
+      <div class="stack">
+        <div class="mock-stage ging-plum"><div class="woven"><span class="wordmark">Solme</span></div><span class="dim" style="color:var(--cocoa)">50 × 15mm</span></div>
+        <h3>Nhãn dệt chính</h3>
+        <p class="small">Dệt <b>damask</b>, nền mận, chữ hồng. Gập đôi, kẹp vào đường may cạnh trái miệng túi, đầu nhãn thò ra 15mm. Riêng pouch thì may vào khoá kéo.</p>
+      </div>
+      <div class="stack">
+        <div class="mock-stage" style="background:var(--soft)">
+          <div class="care">
+            <span class="wordmark">Solme</span>
+            Vải: 100% cotton<br>Lót: canvas 12oz
+            <hr>
+            Giặt tay, nước lạnh<br>Không dùng chất tẩy<br>Phơi trong bóng râm<br>Là ở nhiệt độ thấp
+            <hr>
+            Sản xuất tại Việt Nam<br>Lô: 04/2026
+          </div>
+          <span class="dim">30 × 80mm</span>
+        </div>
+        <h3>Nhãn hướng dẫn giặt</h3>
+        <p class="small">Satin trắng, in 1 màu mận. May ở đường lót bên trong. Bắt buộc có tên vải, cách giặt và nơi sản xuất.</p>
+      </div>
+      <div class="stack">
+        <div class="mock-stage" style="background:var(--soft);gap:14px">
+          <div class="hangtag"><span class="wordmark">Solme</span><span style="font-size:9px;letter-spacing:.3em;text-transform:uppercase">handmade with soul</span></div>
+          <div class="hangtag back">
+            <div class="field"><span>Mẫu</span>Tote caro hồng</div>
+            <div class="field"><span>Người may</span>Chị Hà</div>
+            <div class="field"><span>Ngày</span>12/10</div>
+            <div style="font-family:var(--f-display);font-style:italic;color:var(--plum);font-size:14px;margin-top:auto">Cảm ơn bạn đã chọn tụi mình 🌷</div>
+          </div>
+          <span class="dim">55 × 90mm</span>
+        </div>
+        <h3>Thẻ treo (2 mặt)</h3>
+        <p class="small">Giấy mỹ thuật 350gsm, bo 2 góc trên. Mặt trước logo, mặt sau <b>người may ký tay</b>. Treo bằng dây cotton màu hồng.</p>
+      </div>
+      <div class="stack">
+        <div class="mock-stage ging-rose">
+          <div class="card-ty">
+            <div class="edge ging-plum"></div>
+            <span class="eyebrow" style="color:#9A7686">Gửi bạn,</span>
+            <div class="big">Cảm ơn bạn<br>đã mang solme<br>đi cùng</div>
+            <div style="font-size:11px;line-height:1.45;padding-right:24px">Giảm 10% đơn sau với mã <b style="color:var(--plum)">SOLME10</b>.<br>Đăng ảnh túi kèm tag <b>@solme.bags</b> để được repost nha 🍑</div>
+          </div>
+          <span class="dim" style="color:var(--cocoa)">A6 · 148 × 105mm</span>
+        </div>
+        <h3>Thiệp cảm ơn</h3>
+        <p class="small">Couché mờ 300gsm. Đặt trên cùng trong hộp để khách thấy đầu tiên khi mở. Thiệp đẹp là thứ khách hay chụp đăng story nhất.</p>
+      </div>
+      <div class="stack">
+        <div class="mock-stage" style="background:var(--blush)">
+          <div class="sticker"><span class="wordmark">s</span><small>đã kiểm tra</small></div>
+          <span class="dim" style="color:var(--cocoa)">Ø 40mm</span>
+        </div>
+        <h3>Sticker niêm phong</h3>
+        <p class="small">Decal giấy, cán mờ. Dán chéo mép giấy pelure. Có thể viết tay tên người kiểm tra lên khoảng trống.</p>
+      </div>
+      <div class="stack">
+        <div class="mock-stage" style="background:var(--soft)">
+          <svg viewBox="0 0 160 170" width="170" role="img" aria-label="Túi vải bụi dây rút">
+            <path d="M40 30 Q80 10 120 30" fill="none" stroke="#E7A4B6" stroke-width="4" stroke-linecap="round"/>
+            <path d="M30 30 H130 L138 160 H22 Z" fill="#F8DDE4" stroke="#6B2D4A" stroke-width="2"/>
+            <path d="M30 42 H130" stroke="#6B2D4A" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <text x="80" y="105" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="28" fill="#6B2D4A">solme</text>
+          </svg>
+          <span class="dim">40 × 45cm</span>
+        </div>
+        <h3>Túi vải bụi (cho đơn từ 400k)</h3>
+        <p class="small">Vải mộc in lụa 1 màu, dây rút hồng. Khách dùng lại để đựng đồ, nên logo được nhìn thấy lâu dài.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Box -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band" style="background:#C9A47E"></div><span class="eyebrow">Phần 2 · Label & box</span></div>
+      <div>
+        <h2>Hộp và trải nghiệm mở hộp</h2>
+        <p class="lede">Hộp nắp gài (mailer box) carton 3 lớp sóng E. Ngoài là màu kraft mộc in 1 màu mận. Mở nắp ra là mặt trong in caro hồng.</p>
+      </div>
+    </div>
+    <div class="box-row">
+      <div class="stack">
+        <div class="box kraft"><span class="wordmark">Solme</span><span style="font-size:11px;letter-spacing:.32em;text-transform:uppercase;font-weight:600">handmade with soul</span><span class="corner" style="bottom:12px;right:14px;font-size:10px">@solme.bags</span></div>
+        <b>Mặt ngoài nắp</b><span class="small muted">Kraft, in flexo 1 màu mận. Cạnh hông in "Mở nhẹ tay nha 🎀".</span>
+      </div>
+      <div class="stack">
+        <div class="box ging-rose"><div class="lid-msg">Gửi bạn<br>một chút tâm hồn</div></div>
+        <b>Mặt trong nắp</b><span class="small muted">In offset caro hồng phủ kín. Đây là khung hình đầu tiên của mọi video mở hộp.</span>
+      </div>
+    </div>
+    <div class="tbl-wrap" style="margin-top:24px">
+      <table class="tnum">
+        <thead><tr><th>Cỡ hộp</th><th>Kích thước trong (D × R × C)</th><th>Đựng vừa</th></tr></thead>
+        <tbody>
+          <tr><td><b>S</b></td><td>24 × 16 × 7cm</td><td>1–2 pouch, túi bình nước</td></tr>
+          <tr><td><b>M</b></td><td>35 × 28 × 8cm</td><td>1 tote gập đôi + 1 pouch</td></tr>
+          <tr><td><b>L</b></td><td>40 × 32 × 12cm</td><td>Set "Hộp Solme" 3 món, túi teddy</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3 style="margin-top:36px;margin-bottom:16px">Thứ tự xếp hộp (từ dưới lên)</h3>
+    <div class="steps">
+      <div class="step"><b>Lót giấy pelure</b><p class="small muted">2 tờ hồng sữa, để thừa mép ra ngoài hộp.</p></div>
+      <div class="step"><b>Túi trong túi bụi</b><p class="small muted">Quai gập vào trong, nhãn dệt quay lên trên.</p></div>
+      <div class="step"><b>Phụ kiện bên cạnh</b><p class="small muted">Pouch, móc khoá hoặc quà tặng kèm.</p></div>
+      <div class="step"><b>Gấp pelure, dán sticker</b><p class="small muted">Dán sticker "s" đúng giữa mép giấy.</p></div>
+      <div class="step"><b>Thiệp đặt trên cùng</b><p class="small muted">Mặt "Cảm ơn bạn đã mang solme đi cùng" ngửa lên.</p></div>
+      <div class="step"><b>Quay 10 giây</b><p class="small muted">Quay lại cảnh đóng hộp để làm nội dung "Đóng đơn".</p></div>
+    </div>
+
+    <h3 style="margin-top:40px;margin-bottom:16px">Chi phí ước tính bao bì (mỗi đơn)</h3>
+    <div class="tbl-wrap">
+      <table class="tnum">
+        <thead><tr><th>Món</th><th>Số lượng đặt tối thiểu</th><th>Giá ước tính / cái</th><th>Tìm xưởng ở đâu</th></tr></thead>
+        <tbody>
+          <tr><td>Nhãn dệt 50×15mm</td><td>1.000</td><td>400 – 800đ</td><td>Xưởng nhãn dệt (Shopee: "nhãn dệt theo yêu cầu")</td></tr>
+          <tr><td>Nhãn giặt satin</td><td>1.000</td><td>200 – 400đ</td><td>Cùng xưởng nhãn dệt</td></tr>
+          <tr><td>Thẻ treo + dây</td><td>500</td><td>1.500 – 2.500đ</td><td>Xưởng in giấy mỹ thuật</td></tr>
+          <tr><td>Thiệp A6</td><td>500</td><td>1.000 – 1.800đ</td><td>Xưởng in nhanh, in kỹ thuật số</td></tr>
+          <tr><td>Sticker Ø40mm</td><td>500</td><td>300 – 500đ</td><td>In decal theo yêu cầu</td></tr>
+          <tr><td>Hộp mailer M (in 2 mặt)</td><td>300 – 500</td><td>12.000 – 20.000đ</td><td>Xưởng hộp carton</td></tr>
+          <tr><td>Giấy pelure hồng (2 tờ)</td><td>Gói 100 tờ</td><td>800 – 1.200đ</td><td>Cửa hàng vật tư đóng gói</td></tr>
+          <tr><td><b>Tổng / đơn (không tính túi bụi)</b></td><td></td><td><b>~16.000 – 27.000đ</b></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:14px">Giá chỉ để ước lượng. Hãy xin báo giá ở 2–3 xưởng trước khi đặt. Lúc mới bắt đầu, có thể dùng hộp kraft trơn và đóng dấu cao su logo (khắc dấu khoảng 150–250k) để chưa phải đặt 300 hộp in sẵn.</p>
+  </div>
+</section>
+
+<!-- 7. Social -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band" style="background:var(--apricot)"></div><span class="eyebrow">Phần 3 · Social content</span></div>
+      <div>
+        <h2>Instagram & TikTok</h2>
+        <p class="lede">Trang cá nhân, lưới ảnh 9 ô đầu tiên và các highlight. Đây là những thứ khách mới nhìn thấy trong 3 giây đầu.</p>
+      </div>
+    </div>
+    <div class="grid g2" style="align-items:start">
+      <div class="phone" aria-label="Mô phỏng trang Instagram của Solme">
+        <div class="ig-head">
+          <div class="ig-av"><span class="wordmark">s</span></div>
+          <div class="ig-stats tnum"><div><b>9</b>bài</div><div><b>0</b>người theo dõi</div><div><b>48</b>đang theo dõi</div></div>
+        </div>
+        <div class="ig-bio">
+          <b>Solme · túi vải may tay 🌷</b><br>
+          Mỗi chiếc túi, một tâm hồn<br>
+          🧵 May tay từng chiếc · thêu tên theo yêu cầu<br>
+          🎀 Đặt hàng: Shopee "solme.bags" hoặc nhắn tin<br>
+          <span style="color:var(--accent);font-weight:600">solmebags.vn</span>
+        </div>
+        <div class="ig-hl">
+          <div><i style="background:var(--rose)"></i>Feedback</div>
+          <div><i class="ging-rose"></i>Đóng đơn</div>
+          <div><i style="background:var(--plum)"></i>Xưởng may</div>
+          <div><i class="dots"></i>Thêu tên</div>
+          <div><i style="background:var(--apricot)"></i>Bảng size</div>
+        </div>
+        <div class="ig-grid">
+          <div class="tile ging-rose"><span class="reel"></span><svg viewBox="0 0 100 110"><path d="M32 38 C32 12 68 12 68 38" fill="none" stroke="#6B2D4A" stroke-width="5"/><rect x="16" y="34" width="68" height="72" rx="3" fill="url(#pg-plum)" stroke="#6B2D4A" stroke-width="1.5"/></svg></div>
+          <div class="tile" style="background:var(--plum);color:var(--rose)"><span class="t" style="font-size:16px">Solme<br>đã mở<br>bán 🌷</span></div>
+          <div class="tile dots"><span class="reel"></span><span class="t" style="background:var(--milk);color:var(--plum);padding:4px 6px;border-radius:4px">thêu tên<br>bạn thân</span></div>
+          <div class="tile" style="background:#C9A47E"><span class="reel"></span><span class="t" style="color:var(--plum)">đóng đơn<br>số 001</span></div>
+          <div class="tile ging-plum"><svg viewBox="0 0 100 110"><rect x="18" y="40" width="64" height="40" rx="10" fill="url(#pg-rose)" stroke="#6B2D4A" stroke-width="1.5"/><path d="M24 44 H76" stroke="#E3963A" stroke-width="3"/></svg></div>
+          <div class="tile" style="background:var(--blush)"><span class="reel"></span><span class="t" style="color:var(--plum)">1 túi<br>5 cách đeo</span></div>
+          <div class="tile" style="background:var(--rose)"><span class="t" style="color:var(--plum);font-style:italic">"Cảm ơn bạn<br>đã mang solme<br>đi cùng"</span></div>
+          <div class="tile ging-rose"><span class="reel"></span><svg viewBox="0 0 100 110"><rect x="34" y="22" width="32" height="76" rx="4" fill="url(#pg-rose)" stroke="#6B2D4A" stroke-width="1.5"/><path d="M38 22 C38 6 62 6 62 22" fill="none" stroke="#6B2D4A" stroke-width="4"/></svg></div>
+          <div class="tile" style="background:var(--cocoa);color:var(--apricot)"><span class="t">xưởng<br>nhỏ, tay<br>chậm 🧵</span></div>
+        </div>
+      </div>
+      <div class="stack" style="gap:18px">
+        <div class="panel stack">
+          <span class="eyebrow">Quy tắc lưới ảnh</span>
+          <p class="small">Xen kẽ <b>ảnh vải caro</b> và <b>ô màu trơn có chữ</b>, như bàn cờ. Mỗi hàng 3 ô có ít nhất 1 Reels. Ảnh bìa Reels luôn tự thiết kế, không lấy khung hình ngẫu nhiên.</p>
+        </div>
+        <div class="panel stack">
+          <span class="eyebrow">Cách chụp</span>
+          <ul class="small" style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px">
+            <li><b>Nền:</b> bàn gỗ sáng, tường trắng, khăn hồng sữa. Dùng đúng 1 bàn cho mọi video.</li>
+            <li><b>Ánh sáng:</b> cửa sổ 9–11h sáng, không bật flash, không dùng đèn vàng.</li>
+            <li><b>Góc quay:</b> từ trên xuống (flatlay) cho sản phẩm, ngang tầm tay cho video may.</li>
+            <li><b>Luôn có tay người</b> trong khung hình: cầm, gấp, kéo khoá. Móng tay gọn, màu nude.</li>
+            <li><b>Khung hình:</b> dọc 9:16 cho Reels/TikTok, 4:5 cho ảnh feed.</li>
+            <li><b>Âm thanh:</b> giữ tiếng máy may, tiếng kéo, tiếng giấy, rồi thêm 1 nhạc trend vặn nhỏ.</li>
+          </ul>
+        </div>
+        <div class="panel stack">
+          <span class="eyebrow">Tên shop thống nhất</span>
+          <p class="small">Dùng một handle cho tất cả: <b>@solme.bags</b> (Instagram, TikTok, Threads, Shopee). Kiểm tra tên còn trống trước khi in bao bì.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Content pillars + scripts -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band stripe"></div><span class="eyebrow">Phần 3 · Social content</span></div>
+      <div>
+        <h2>5 nhóm nội dung</h2>
+        <p class="lede">Đăng 4 bài feed mỗi tuần, cộng 3–5 story mỗi ngày. Mọi bài đều thuộc một trong năm nhóm dưới đây.</p>
+      </div>
+    </div>
+    <div class="pillar-bar" role="img" aria-label="Tỉ lệ nhóm nội dung">
+      <div style="flex:35;background:var(--plum);color:var(--rose)">May túi 35%</div>
+      <div style="flex:25;background:var(--rose);color:var(--plum)">Sản phẩm 25%</div>
+      <div style="flex:20;background:#C9A47E;color:var(--cocoa)">Đóng đơn 20%</div>
+      <div style="flex:10;background:var(--apricot);color:var(--cocoa)">Khách 10%</div>
+      <div style="flex:10;background:var(--cocoa);color:var(--milk)">Xưởng 10%</div>
+    </div>
+    <div class="grid g3" style="margin-top:20px">
+      <div class="panel stack"><span class="pill" style="align-self:flex-start;background:var(--plum);color:var(--rose)">May túi · 35%</span><p class="small">Cắt vải, may, lộn túi, thêu tên. Không cần nói, chỉ cần âm thanh. Đây là nhóm dễ viral nhất.</p></div>
+      <div class="panel stack"><span class="pill" style="align-self:flex-start;background:var(--rose);color:var(--plum)">Sản phẩm · 25%</span><p class="small">Bên trong túi đựng được gì, cách phối đồ, so sánh kích thước khi đeo lên người.</p></div>
+      <div class="panel stack"><span class="pill" style="align-self:flex-start;background:#C9A47E;color:var(--cocoa)">Đóng đơn · 20%</span><p class="small">"Gói đơn cho bạn ở Đà Nẵng", đặc biệt với các đơn có thêu tên.</p></div>
+      <div class="panel stack"><span class="pill" style="align-self:flex-start;background:var(--apricot);color:var(--cocoa)">Khách hàng · 10%</span><p class="small">Đăng lại ảnh khách tag, chụp màn hình feedback, video khách mở hộp.</p></div>
+      <div class="panel stack"><span class="pill" style="align-self:flex-start;background:var(--cocoa);color:var(--milk)">Xưởng · 10%</span><p class="small">Đi chợ chọn vải, giới thiệu người may, lỗi may hỏng và cách sửa.</p></div>
+    </div>
+
+    <h3 style="margin-top:44px;margin-bottom:18px">5 kịch bản Reels/TikTok quay được ngay</h3>
+    <div class="grid g2">
+      <article class="panel script">
+        <div class="kv"><span class="pill">May túi</span><span class="pill">12 giây</span><span class="pill">Không lời</span></div>
+        <p class="hook">"Từ 1 mét vải caro thành chiếc túi này"</p>
+        <ol>
+          <li>Trải tấm vải trên bàn, vuốt phẳng (2s)</li>
+          <li>Cắt vải theo rập, quay cận lưỡi kéo (2s)</li>
+          <li>Máy may chạy đường viền, tiếng máy rõ (3s)</li>
+          <li>Lộn túi ra, kẹp nhãn dệt vào (2s)</li>
+          <li>Xách túi lên, xoay một vòng trước cửa sổ (3s)</li>
+        </ol>
+        <p class="small muted">Chữ trên video: "1m vải → 1 túi tote · 2 tiếng 40 phút"</p>
+      </article>
+      <article class="panel script">
+        <div class="kv"><span class="pill">Đóng đơn</span><span class="pill">15 giây</span><span class="pill">ASMR</span></div>
+        <p class="hook">"Gói đơn thêu tên cho Trang ở Sài Gòn 🎀"</p>
+        <ol>
+          <li>Quay cận chữ "Trang" vừa thêu xong (2s)</li>
+          <li>Mở hộp kraft, mặt trong caro hồng hiện ra (2s)</li>
+          <li>Lót giấy pelure, đặt túi vào (4s)</li>
+          <li>Gấp giấy, dán sticker "s" (3s)</li>
+          <li>Đặt thiệp "Cảm ơn bạn đã mang solme đi cùng" lên, đóng nắp (4s)</li>
+        </ol>
+        <p class="small muted">Phải hỏi xin phép khách trước khi đăng tên của họ.</p>
+      </article>
+      <article class="panel script">
+        <div class="kv"><span class="pill">Sản phẩm</span><span class="pill">10 giây</span><span class="pill">Nhạc trend</span></div>
+        <p class="hook">"Túi tote này đựng được những gì?"</p>
+        <ol>
+          <li>Túi rỗng đặt trên bàn, góc từ trên xuống (1s)</li>
+          <li>Lần lượt bỏ vào: laptop 14", sổ, bình nước, ví, son, ô gấp. Mỗi món 1 nhịp nhạc (7s)</li>
+          <li>Kéo khoá, xách lên vai (2s)</li>
+        </ol>
+        <p class="small muted">Chữ trên video: kích thước túi 38 × 34 × 10cm</p>
+      </article>
+      <article class="panel script">
+        <div class="kv"><span class="pill">Sản phẩm</span><span class="pill">8 giây</span><span class="pill">Chuyển cảnh</span></div>
+        <p class="hook">"1 chiếc túi, 5 kiểu đi đâu cũng hợp"</p>
+        <ol>
+          <li>Đi học: áo sơ mi trắng + tote caro hồng</li>
+          <li>Đi làm: blazer be + túi laptop caro mận</li>
+          <li>Đi cà phê: váy hoa nhí + pouch đeo chéo</li>
+          <li>Đi chợ: áo thun + tote gập</li>
+          <li>Đi Đà Lạt: áo len + túi teddy chấm</li>
+        </ol>
+        <p class="small muted">Chuyển cảnh mỗi lần vỗ tay hoặc theo nhịp nhạc.</p>
+      </article>
+      <article class="panel script">
+        <div class="kv"><span class="pill">Xưởng</span><span class="pill">20 giây</span><span class="pill">Có lồng tiếng</span></div>
+        <p class="hook">"Đi chợ chọn vải cùng Solme"</p>
+        <ol>
+          <li>Cảnh cổng chợ buổi sáng (2s)</li>
+          <li>Tay lật các cây vải caro, chọn màu (6s)</li>
+          <li>Đặt mẫu vải cạnh thẻ màu Solme để so (4s)</li>
+          <li>Ôm cây vải về, đặt lên bàn may (4s)</li>
+          <li>Lồng tiếng: "Tuần sau cây vải này thành 20 chiếc túi" (4s)</li>
+        </ol>
+      </article>
+      <article class="panel script">
+        <div class="kv"><span class="pill">Khách hàng</span><span class="pill">Story</span><span class="pill">Mỗi ngày</span></div>
+        <p class="hook">"Hôm nay Solme nhận được…"</p>
+        <ol>
+          <li>Đăng lại story khách tag, thêm sticker "cảm ơn 🌷"</li>
+          <li>Ảnh chụp màn hình feedback (che tên khách)</li>
+          <li>Bình chọn: "Mẫu tiếp theo: caro xanh mint hay caro vàng bơ?"</li>
+          <li>Đếm ngược ngày mở bán bộ sưu tập mới</li>
+        </ol>
+        <p class="small muted">Lưu vào highlight Feedback ngay trong ngày.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Calendar + captions -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band ging-rose"></div><span class="eyebrow">Phần 3 · Social content</span></div>
+      <div>
+        <h2>Lịch 4 tuần ra mắt</h2>
+        <p class="lede">Bắt đầu đăng 2 tuần trước khi mở bán. Bài đăng lúc 20:00–21:30, khung giờ khách mục tiêu lướt điện thoại nhiều nhất.</p>
+      </div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Tuần</th><th>Thứ 2</th><th>Thứ 4</th><th>Thứ 6</th><th>Chủ nhật</th></tr></thead>
+        <tbody>
+          <tr><td><b>1 · Giới thiệu</b><br><span class="small muted">chưa bán</span></td><td>Ảnh: "Solme là ai" + logo</td><td>Reels: đi chợ chọn vải</td><td>Reels: từ 1 mét vải thành túi</td><td>Ảnh: bảng màu và 3 loại vải</td></tr>
+          <tr><td><b>2 · Nhá hàng</b><br><span class="small muted">đếm ngược</span></td><td>Reels: may thử túi teddy chấm</td><td>Carousel: 5 mẫu đầu tiên, giá</td><td>Reels: thêu tên thử cho bạn thân</td><td>Ảnh: "Thứ 2 tuần sau mở bán 🎀"</td></tr>
+          <tr><td><b>3 · Mở bán</b><br><span class="small muted">20 suất thêu tên miễn phí</span></td><td>Reels: "Solme đã mở bán"</td><td>Reels: túi đựng được những gì</td><td>Reels: gói đơn số 001</td><td>Carousel: feedback đơn đầu tiên</td></tr>
+          <tr><td><b>4 · Giữ nhịp</b></td><td>Reels: 1 túi, 5 kiểu phối</td><td>Ảnh: chân dung chị thợ may</td><td>Reels: gói đơn thêu tên</td><td>Bình chọn màu vải tiếp theo</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:40px;margin-bottom:16px">Mẫu caption</h3>
+    <div class="grid g2">
+      <div class="stack">
+        <span class="eyebrow">Bài mở bán</span>
+        <div class="cap-box" id="cap1">Solme đã mở bán rồi nè 🌷
+
+5 mẫu túi vải đầu tiên, may tay từng chiếc. Tote caro hồng, túi laptop caro mận, pouch, túi bình nước và túi teddy chấm thêu.
+
+🎀 20 đơn đầu tiên được thêu tên miễn phí
+🧵 Mỗi túi có thẻ ký tên của người may
+📦 Giao toàn quốc 2–4 ngày
+
+Đặt hàng qua link ở bio hoặc nhắn tin cho Solme nha.
+
+#solmebags #tuivaihandmade #tuitote #tuicaro #quatangbanthan</div>
+        <button class="copy" type="button" data-target="cap1">Sao chép caption</button>
+      </div>
+      <div class="stack">
+        <span class="eyebrow">Bài đóng đơn</span>
+        <div class="cap-box" id="cap2">Gói đơn cho bạn Trang ở Sài Gòn 🎀
+
+Túi tote caro hồng thêu chữ "Trang" bằng chỉ màu mơ. Chị Hà may xong lúc 3 giờ chiều, Solme gói luôn cho kịp chuyến xe tối.
+
+Bạn muốn thêu tên ai? Ghi tên vào phần ghi chú khi đặt hàng là được nha.
+
+#solmebags #thentheoyeucau #tuivaihandmade #packingorders #asmrpacking</div>
+        <button class="copy" type="button" data-target="cap2">Sao chép caption</button>
+      </div>
+    </div>
+    <div class="panel stack" style="margin-top:20px">
+      <span class="eyebrow">Bộ hashtag (5 cái mỗi bài, đổi luân phiên)</span>
+      <p class="small"><b>Luôn có:</b> #solmebags #tuivaihandmade</p>
+      <p class="small"><b>Sản phẩm:</b> #tuitote #tuicaro #tuivaicanvas #tuideovai #pouchmypham #tuidunglaptop</p>
+      <p class="small"><b>Dịp tặng quà:</b> #quatangbanthan #quasinhnhat #quatang2010 #quatangnoel</p>
+      <p class="small"><b>Xu hướng:</b> #packingorders #asmrpacking #smallbusinessvietnam #handmadevietnam</p>
+    </div>
+  </div>
+</section>
+
+<!-- Góc chụp -->
+<section id="goc-chup">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band" style="background:var(--apricot)"></div><span class="eyebrow">Phần 3 · Chụp ảnh</span></div>
+      <div>
+        <h2>8 góc chụp sản phẩm</h2>
+        <p class="lede">Mỗi góc có hai hình: bên trái là cách đặt điện thoại nhìn từ bên cạnh, bên phải là khung ảnh nhận được. Đường nét đứt trong khung ảnh là lưới chia ba, bật lưới này trong camera để bố cục đúng.</p>
+      </div>
+    </div>
+    <div class="grid g2">
+      <article class="panel stack">
+        <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap"><h3>Góc 1 · Từ trên xuống (flatlay)</h3><span class="pill">90° · hay dùng nhất</span></div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:12px;align-items:start"><div style="min-width:0"><svg viewBox="0 0 200 120" role="img" aria-label="90° · cách 50cm" style="width:100%;height:auto;background:var(--soft);border-radius:10px"><line x1="8" y1="96" x2="192" y2="96" stroke="var(--muted)" stroke-width="1.5"/><path d="M102 66 C102 48 118 48 118 66" fill="none" stroke="#6B2D4A" stroke-width="2.5"/><rect x="95" y="66" width="30" height="30" rx="2" fill="url(#pg-plum)" stroke="#6B2D4A" stroke-width="1.5"/><line x1="110" y1="24" x2="110" y2="76" stroke="#E3963A" stroke-width="1.6" stroke-dasharray="4 3"/><g transform="translate(110 24) rotate(90.0)"><rect x="-10" y="-7" width="20" height="14" rx="3" fill="#6B2D4A"/><circle cx="10" cy="0" r="5" fill="#E7A4B6" stroke="#6B2D4A" stroke-width="1.5"/></g><text x="10" y="14" font-family="'Be Vietnam Pro',Arial,sans-serif" font-size="9" font-weight="700" style="fill:var(--muted)">90° · cách 50cm</text></svg></div><div style="min-width:0"><rect x="30" y="52" width="50" height="62" rx="3" fill="url(#pg-plum)" stroke="#6B2D4A" stroke-width="1.5"/><path d="M42 52 C42 34 68 34 68 52" fill="none" stroke="#6B2D4A" stroke-width="3"/><rect x="38" y="52" width="34" height="9" fill="#6B2D4A"/><circle cx="98" cy="42" r="10" fill="var(--card)" stroke="#6B2D4A" stroke-width="1.5"/><rect x="88" y="62" width="22" height="30" rx="2" fill="#E7A4B6" stroke="#6B2D4A" stroke-width="1.5"/><rect x="92" y="104" width="22" height="12" rx="5" fill="url(#pg-rose)" stroke="#6B2D4A" stroke-width="1.5"/></div></div>
+        <p class="small"><b>Cách chụp:</b> Đặt điện thoại song song mặt bàn, cách túi khoảng 50cm. Bày túi ở một góc ba phần khung, đồ đi kèm xung quanh. Để chừa chỗ trống để thêm chữ.</p>
+        <p class="small muted"><b>Dùng cho:</b> Ảnh feed, carousel 'túi đựng gì', bảng giá, ảnh Shopee phụ.</p>
+      </article>
+      <article class="panel stack">
+        <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap"><h3>Góc 2 · Xiên 45°</h3><span class="pill">Ảnh bìa, ảnh chính Shopee</span></div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:12px;align-items:start"><div style="min-width:0"><svg viewBox="0 0 200 120" role="img" aria-label="45° · cách 45cm" style="width:100%;height:auto;background:var(--soft);border-radius:10px"><line x1="8" y1="96" x2="192" y2="96" stroke="var(--muted)" stroke-width="1.5"/><path d="M102 66 C102 48 118 48 118 66" fill="none" stroke="#6B2D4A" stroke-width="2.5"/><rect x="95" y="66" width="30" height="30" rx="2" fill="url(#pg-plum)" stroke="#6B2D4A" stroke-width="1.5"/><line x1="160" y1="40" x2="115" y2="78" stroke="#E3963A" stroke-width="1.6" stroke-dasharray="4 3"/><g transform="translate(160 40) rotate(139.8)"><rect x="-10" y="-7" width="20" height="14" rx="3" fill="#6B2D4A"/><circle cx="10" cy="0" r="5" fill="#E7A4B6" stroke="#6B2D4A" stroke-width="1.5"/></g><text x="10" y="14" font-family="'Be Vietnam Pro',Arial,sans-serif" font-size="9" font-weight="700" style="fill:var(--muted)">45° · cách 45cm</text></svg></div><div style="min-width:0"><path d="M40 70 C40 40 80 40 80 70" fill="none" stroke="#6B2D4A" stroke-width="3.5"/><polygon points="30,76 90,76 94,86 26,86" fill="#6B2D4A" opacity=".85"/><rect x="26" y="86" width="68" height="46" rx="3" fill="url(#pg-plum)" stroke="#6B2D4A" stroke-width="1.5"/><rect x="52" y="86" width="16" height="8" fill="#6B2D4A"/></div></div>
+        <p class="small"><b>Cách chụp:</b> Hạ điện thoại cho chếch 45° với mặt bàn. Thấy được cả mặt trước, miệng túi và quai. Đây là góc cho người xem cảm giác túi có khối.</p>
+        <p class="small muted"><b>Dùng cho:</b> Ảnh đại diện sản phẩm, ảnh bìa Reels, ảnh đầu tiên trên Shopee.</p>
+      </article>
+      <article class="panel stack">
+        <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap"><h3>Góc 3 · Ngang tầm, chính diện</h3><span class="pill">0° · thấy hết chiều cao</span></div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:12px;align-items:start"><div style="min-width:0"><svg viewBox="0 0 200 120" role="img" aria-label="0° · ngang tầm · cách 60cm" style="width:100%;height:auto;background:var(--soft);border-radius:10px"><line x1="8" y1="96" x2="192" y2="96" stroke="var(--muted)" stroke-width="1.5"/><path d="M102 66 C102 48 118 48 118 66" fill="none" stroke="#6B2D4A" stroke-width="2.5"/><rect x="95" y="66" width="30" height="30" rx="2" fill="url(#pg-plum)" stroke="#6B2D4A" stroke-width="1.5"/><line x1="172" y1="80" x2="125" y2="80" stroke="#E3963A" stroke-width="1.6" stroke-dasharray="4 3"/><g transform="translate(172 80) rotate(180.0)"><rect x="-10" y="-7" width="20" height="14" rx="3" fill="#6B2D4A"/><circle cx="10" cy="0" r="5" fill="#E7A4B6" stroke="#6B2D4A" stroke-width="1.5"/></g><text x="10" y="14" font-family="'Be Vietnam Pro',Arial,sans-serif" font-size="9" font-weight="700" style="fill:var(--muted)">0° · ngang tầm · cách 60cm</text></svg></div><div style="min-width:0"><path d="M42 62 C42 20 78 20 78 62" fill="none" stroke="#6B2D4A" stroke-width="3.5"/><rect x="30" y="62" width="60" height="62" rx="3" fill="url(#pg-plum)" stroke="#6B2D4A" stroke-width="1.5"/><rect x="50" y="62" width="20" height="9" fill="#6B2D4A"/><line x1="0" y1="124" x2="120" y2="124" stroke="var(--muted)" stroke-width="1"/></div></div>
+        <p class="small"><b>Cách chụp:</b> Đặt túi đứng trên bàn, điện thoại ngang tầm giữa túi, cách 60cm. Túi nằm giữa khung, nền đơn giản. Góc này thể hiện đúng tỉ lệ rộng và cao.</p>
+        <p class="small muted"><b>Dùng cho:</b> Ảnh kích thước, ảnh so với bình nước, ảnh Shopee phụ.</p>
+      </article>
+      <article class="panel stack">
+        <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap"><h3>Góc 4 · Cận chi tiết</h3><span class="pill">Lấy nét tay, cách 15cm</span></div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:12px;align-items:start"><div style="min-width:0"><svg viewBox="0 0 200 120" role="img" aria-label="cận · cách 15cm" style="width:100%;height:auto;background:var(--soft);border-radius:10px"><line x1="8" y1="96" x2="192" y2="96" stroke="var(--muted)" stroke-width="1.5"/><path d="M102 66 C102 48 118 48 118 66" fill="none" stroke="#6B2D4A" stroke-width="2.5"/><rect x="95" y="66" width="30" height="30" rx="2" fill="url(#pg-plum)" stroke="#6B2D4A" stroke-width="1.5"/><circle cx="122" cy="74" r="12" fill="none" stroke="#E3963A" stroke-width="1.2"/><line x1="150" y1="64" x2="126" y2="74" stroke="#E3963A" stroke-width="1.6" stroke-dasharray="4 3"/><g transform="translate(150 64) rotate(157.4)"><rect x="-10" y="-7" width="20" height="14" rx="3" fill="#6B2D4A"/><circle cx="10" cy="0" r="5" fill="#E7A4B6" stroke="#6B2D4A" stroke-width="1.5"/></g><text x="10" y="14" font-family="'Be Vietnam Pro',Arial,sans-serif" font-size="9" font-weight="700" style="fill:var(--muted)">cận · cách 15cm</text></svg></div><div style="min-width:0"><rect x="0" y="0" width="120" height="150" fill="url(#pg-rose)" opacity=".9"/><rect x="22" y="48" width="76" height="34" rx="2" fill="#6B2D4A" stroke="#6B2D4A"/><text x="60" y="71" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="20" fill="#E7A4B6">solme</text><path d="M10 40 H110 M10 90 H110" stroke="#6B2D4A" stroke-width="1.5" stroke-dasharray="4 3" fill="none"/></div></div>
+        <p class="small"><b>Cách chụp:</b> Đưa điện thoại sát vào nhãn dệt, đường may, chữ thêu, khoá kéo. Dùng ống kính zoom 2x thay vì bước lại gần để ảnh không méo. Nhấn giữ vào màn hình để lấy nét.</p>
+        <p class="small muted"><b>Dùng cho:</b> Ảnh chất liệu, ảnh thêu tên, thứ khách muốn xem kỹ trước khi mua.</p>
+      </article>
+      <article class="panel stack">
+        <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap"><h3>Góc 5 · Nhìn vào trong túi</h3><span class="pill">60° · chếch từ trên</span></div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:12px;align-items:start"><div style="min-width:0"><svg viewBox="0 0 200 120" role="img" aria-label="60° nhìn vào miệng túi · cách 40cm" style="width:100%;height:auto;background:var(--soft);border-radius:10px"><line x1="8" y1="96" x2="192" y2="96" stroke="var(--muted)" stroke-width="1.5"/><path d="M102 66 C102 48 118 48 118 66" fill="none" stroke="#6B2D4A" stroke-width="2.5"/><rect x="95" y="66" width="30" height="30" rx="2" fill="url(#pg-plum)" stroke="#6B2D4A" stroke-width="1.5"/><line x1="145" y1="28" x2="112" y2="70" stroke="#E3963A" stroke-width="1.6" stroke-dasharray="4 3"/><g transform="translate(145 28) rotate(128.2)"><rect x="-10" y="-7" width="20" height="14" rx="3" fill="#6B2D4A"/><circle cx="10" cy="0" r="5" fill="#E7A4B6" stroke="#6B2D4A" stroke-width="1.5"/></g><text x="10" y="14" font-family="'Be Vietnam Pro',Arial,sans-serif" font-size="9" font-weight="700" style="fill:var(--muted)">60° nhìn vào miệng túi · cách 40cm</text></svg></div><div style="min-width:0"><ellipse cx="60" cy="78" rx="48" ry="34" fill="url(#pg-rose)" stroke="#6B2D4A" stroke-width="2"/><ellipse cx="60" cy="80" rx="40" ry="27" fill="#6B2D4A" opacity=".85"/><rect x="30" y="58" width="36" height="24" rx="2" fill="var(--card)" stroke="#E7A4B6" stroke-width="1.2" transform="rotate(-8 48 70)"/><rect x="70" y="52" width="10" height="28" rx="4" fill="#E3963A"/><rect x="82" y="66" width="14" height="16" rx="2" fill="#E7A4B6"/></div></div>
+        <p class="small"><b>Cách chụp:</b> Mở rộng miệng túi, chếch điện thoại 60° để thấy lớp lót và các ngăn. Xếp đồ ló ra một nửa: laptop, bình nước, sổ. Không nhét đầy kín.</p>
+        <p class="small muted"><b>Dùng cho:</b> Ảnh 'túi đựng gì', ảnh lớp lót, ảnh ngăn khoá.</p>
+      </article>
+      <article class="panel stack">
+        <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap"><h3>Góc 6 · Đeo trên người</h3><span class="pill">Ngang ngực, thấy từ đầu gối tới vai</span></div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:12px;align-items:start"><div style="min-width:0"><svg viewBox="0 0 200 120" role="img" aria-label="ngang ngực · cách 1,5m" style="width:100%;height:auto;background:var(--soft);border-radius:10px"><line x1="8" y1="96" x2="192" y2="96" stroke="var(--muted)" stroke-width="1.5"/><circle cx="100" cy="36" r="8" fill="#E7A4B6"/><rect x="90" y="46" width="20" height="30" rx="8" fill="var(--card)" stroke="#6B2D4A" stroke-width="1.5"/><rect x="92" y="76" width="16" height="20" fill="var(--card)" stroke="#6B2D4A" stroke-width="1.5"/><rect x="78" y="62" width="18" height="18" rx="2" fill="url(#pg-plum)" stroke="#6B2D4A" stroke-width="1.5"/><line x1="170" y1="56" x2="112" y2="60" stroke="#E3963A" stroke-width="1.6" stroke-dasharray="4 3"/><g transform="translate(170 56) rotate(176.1)"><rect x="-10" y="-7" width="20" height="14" rx="3" fill="#6B2D4A"/><circle cx="10" cy="0" r="5" fill="#E7A4B6" stroke="#6B2D4A" stroke-width="1.5"/></g><text x="10" y="14" font-family="'Be Vietnam Pro',Arial,sans-serif" font-size="9" font-weight="700" style="fill:var(--muted)">ngang ngực · cách 1,5m</text></svg></div><div style="min-width:0"><circle cx="62" cy="26" r="11" fill="#E7A4B6"/><rect x="44" y="40" width="36" height="58" rx="12" fill="var(--card)" stroke="#6B2D4A" stroke-width="1.5"/><line x1="74" y1="42" x2="38" y2="86" stroke="#6B2D4A" stroke-width="3"/><rect x="26" y="82" width="34" height="34" rx="3" fill="url(#pg-plum)" stroke="#6B2D4A" stroke-width="1.5"/><rect x="48" y="96" width="24" height="46" rx="8" fill="var(--card)" stroke="#6B2D4A" stroke-width="1.5"/></div></div>
+        <p class="small"><b>Cách chụp:</b> Nhờ bạn đeo túi, chụp ngang ngực, chỉ lấy từ vai tới đầu gối, không cần thấy mặt. Chọn áo trơn màu be, trắng hoặc nâu để túi nổi bật.</p>
+        <p class="small muted"><b>Dùng cho:</b> Reels, ảnh feed, ảnh kích thước thật trên người.</p>
+      </article>
+      <article class="panel stack">
+        <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap"><h3>Góc 7 · Tay đang thao tác</h3><span class="pill">Quay video là chính</span></div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:12px;align-items:start"><div style="min-width:0"><svg viewBox="0 0 200 120" role="img" aria-label="trên vai, chếch 50° · cách 35cm" style="width:100%;height:auto;background:var(--soft);border-radius:10px"><line x1="8" y1="96" x2="192" y2="96" stroke="var(--muted)" stroke-width="1.5"/><path d="M95 66 C95 48 121 48 121 66" fill="none" stroke="#6B2D4A" stroke-width="2.5"/><rect x="88" y="66" width="40" height="30" rx="2" fill="url(#pg-plum)" stroke="#6B2D4A" stroke-width="1.5"/><ellipse cx="108" cy="62" rx="9" ry="6" fill="#E7A4B6" stroke="#6B2D4A"/><line x1="150" y1="26" x2="112" y2="62" stroke="#E3963A" stroke-width="1.6" stroke-dasharray="4 3"/><g transform="translate(150 26) rotate(136.5)"><rect x="-10" y="-7" width="20" height="14" rx="3" fill="#6B2D4A"/><circle cx="10" cy="0" r="5" fill="#E7A4B6" stroke="#6B2D4A" stroke-width="1.5"/></g><text x="10" y="14" font-family="'Be Vietnam Pro',Arial,sans-serif" font-size="9" font-weight="700" style="fill:var(--muted)">trên vai, chếch 50° · cách 35cm</text></svg></div><div style="min-width:0"><rect x="20" y="64" width="80" height="44" rx="12" fill="url(#pg-rose)" stroke="#6B2D4A" stroke-width="1.5"/><path d="M26 74 H94" stroke="#6B2D4A" stroke-width="2" stroke-dasharray="3 3"/><rect x="84" y="68" width="8" height="12" rx="2" fill="#E3963A"/><ellipse cx="96" cy="46" rx="14" ry="10" fill="#E7A4B6" stroke="#6B2D4A" stroke-width="1.2"/><path d="M86 52 L92 70 M96 54 L96 70 M104 52 L100 68" stroke="#6B2D4A" stroke-width="3" stroke-linecap="round" fill="none"/><rect x="96" y="22" width="26" height="12" rx="6" fill="#E7A4B6" transform="rotate(-20 100 28)"/></div></div>
+        <p class="small"><b>Cách chụp:</b> Chếch từ trên vai xuống, thấy tay đang kéo khoá, mở nút, bỏ đồ vào túi. Tay gọn, móng nude. Giữ máy chắc, chuyển động chậm.</p>
+        <p class="small muted"><b>Dùng cho:</b> Video ASMR, Reels, TikTok, story 'đóng đơn'.</p>
+      </article>
+      <article class="panel stack">
+        <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap"><h3>Góc 8 · Xếp set theo tam giác</h3><span class="pill">90° · cách 70cm</span></div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:12px;align-items:start"><div style="min-width:0"><svg viewBox="0 0 200 120" role="img" aria-label="90° · cách 70cm · xếp tam giác" style="width:100%;height:auto;background:var(--soft);border-radius:10px"><line x1="8" y1="96" x2="192" y2="96" stroke="var(--muted)" stroke-width="1.5"/><path d="M77 70 C77 52 89 52 89 70" fill="none" stroke="#6B2D4A" stroke-width="2.5"/><rect x="70" y="70" width="26" height="26" rx="2" fill="url(#pg-plum)" stroke="#6B2D4A" stroke-width="1.5"/><path d="M111 70 C111 52 123 52 123 70" fill="none" stroke="#6B2D4A" stroke-width="2.5"/><rect x="104" y="70" width="26" height="26" rx="2" fill="url(#pg-rose)" stroke="#6B2D4A" stroke-width="1.5"/><line x1="100" y1="22" x2="100" y2="74" stroke="#E3963A" stroke-width="1.6" stroke-dasharray="4 3"/><g transform="translate(100 22) rotate(90.0)"><rect x="-10" y="-7" width="20" height="14" rx="3" fill="#6B2D4A"/><circle cx="10" cy="0" r="5" fill="#E7A4B6" stroke="#6B2D4A" stroke-width="1.5"/></g><text x="10" y="14" font-family="'Be Vietnam Pro',Arial,sans-serif" font-size="9" font-weight="700" style="fill:var(--muted)">90° · cách 70cm · xếp tam giác</text></svg></div><div style="min-width:0"><polygon points="60,26 24,112 96,112" fill="none" stroke="#E3963A" stroke-width="1.2" stroke-dasharray="4 3"/><rect x="44" y="20" width="32" height="30" rx="3" fill="url(#pg-plum)" stroke="#6B2D4A" stroke-width="1.5"/><path d="M52 20 C52 8 68 8 68 20" fill="none" stroke="#6B2D4A" stroke-width="2.5"/><rect x="8" y="96" width="34" height="22" rx="8" fill="url(#pg-rose)" stroke="#6B2D4A" stroke-width="1.5"/><rect x="78" y="88" width="16" height="34" rx="5" fill="#E7A4B6" stroke="#6B2D4A" stroke-width="1.5"/><rect x="20" y="124" width="80" height="12" rx="2" fill="var(--card)" stroke="#E7A4B6"/></div></div>
+        <p class="small"><b>Cách chụp:</b> Ba món đặt thành hình tam giác: món to nhất ở đỉnh, hai món nhỏ ở hai đáy. Mắt người xem đi vòng quanh từng món. Thêm thiệp ở dưới cùng.</p>
+        <p class="small muted"><b>Dùng cho:</b> Set Hộp Solme, ảnh quà tặng, ảnh bài mở bán.</p>
+      </article>
+    </div>
+
+    <h3 style="margin:36px 0 14px">Danh sách 9 tấm cho mỗi mẫu túi</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Thứ tự</th><th>Góc</th><th>Cảnh cụ thể</th><th>Đăng ở đâu</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Góc 2 · xiên 45°</td><td>Túi đứng một mình, nền hồng sữa</td><td>Ảnh chính Shopee, ảnh bìa</td></tr>
+          <tr><td>2</td><td>Góc 3 · chính diện</td><td>Túi cạnh bình nước để thấy kích thước</td><td>Shopee, bảng size</td></tr>
+          <tr><td>3</td><td>Góc 5 · vào trong</td><td>Laptop, sổ, bình ló ra</td><td>Carousel 'đựng gì'</td></tr>
+          <tr><td>4</td><td>Góc 1 · từ trên xuống</td><td>Tất cả đồ bày quanh túi</td><td>Feed Instagram</td></tr>
+          <tr><td>5</td><td>Góc 4 · cận</td><td>Nhãn dệt solme và đường may</td><td>Ảnh chất liệu</td></tr>
+          <tr><td>6</td><td>Góc 4 · cận</td><td>Chữ thêu tên</td><td>Ảnh dịch vụ thêu tên</td></tr>
+          <tr><td>7</td><td>Góc 6 · đeo trên người</td><td>Từ vai tới đầu gối, đi ngoài sáng</td><td>Reels, story</td></tr>
+          <tr><td>8</td><td>Góc 7 · tay thao tác</td><td>Kéo khoá, gập gọn tote</td><td>Video TikTok, Reels</td></tr>
+          <tr><td>9</td><td>Góc 8 · xếp set</td><td>Tote, pouch, túi bình trong hộp</td><td>Ảnh quà tặng, bài mở bán</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid g3" style="margin-top:26px">
+      <div class="panel stack">
+        <span class="eyebrow">Ánh sáng và nền</span>
+        <ul class="small" style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px">
+          <li>Chụp từ 9:00 đến 11:00, đặt bàn cạnh cửa sổ, ánh sáng đến từ một bên.</li>
+          <li>Dùng một tấm xốp hoặc giấy trắng ở phía đối diện để làm sáng phần bóng của túi.</li>
+          <li>Tắt flash và tắt đèn vàng trong phòng.</li>
+          <li>Nền thay đổi giữa 3 loại: bàn gỗ sáng, tường trắng, khăn hồng sữa.</li>
+        </ul>
+      </div>
+      <div class="panel stack">
+        <span class="eyebrow">Cài đặt điện thoại</span>
+        <ul class="small" style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px">
+          <li>Bật lưới chia ba trong camera.</li>
+          <li>Nhấn giữ vào túi để khoá lấy nét và phơi sáng, kéo thanh sáng xuống hoặc lên một chút nếu ảnh trắng hoặc tối.</li>
+          <li>Dùng zoom 2x của ống kính thay vì zoom số.</li>
+          <li>Lau ống kính trước khi chụp, giữ máy bằng hai tay hoặc dùng chân đế.</li>
+        </ul>
+      </div>
+      <div class="panel stack">
+        <span class="eyebrow">Chỉnh ảnh</span>
+        <ul class="small" style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px">
+          <li>Dùng chung một bộ chỉnh cho mọi ảnh để lưới Instagram đồng bộ.</li>
+          <li>Tăng sáng nhẹ, giữ màu vải giống thật, không làm màu hồng đậm hơn.</li>
+          <li>Cắt ảnh về 4:5 (1080 × 1350) cho feed, 9:16 cho video.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="do-dont" style="margin-top:20px">
+      <div class="panel">
+        <span class="eyebrow">Nên làm</span>
+        <ul class="small">
+          <li>Để túi chiếm khoảng một nửa khung hình, chừa chỗ trống để thêm chữ.</li>
+          <li>Ủi phẳng túi, vuốt quai thẳng trước khi chụp.</li>
+          <li>Cho một món đồ quen thuộc vào ảnh (bình nước, sổ) để người xem hình dung kích thước.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <span class="eyebrow">Tránh</span>
+        <ul class="small">
+          <li>Chụp thấp từ dưới lên, làm túi trông méo và to hơn thật.</li>
+          <li>Nền nhiều đồ vật, màu rực làm lu mờ túi.</li>
+          <li>Bộ lọc đổi màu vải, khiến khách nhận hàng thấy khác ảnh.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Instagram chi tiết -->
+<section id="instagram">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band" style="background:var(--rose)"></div><span class="eyebrow">Phần 3 · Instagram chi tiết</span></div>
+      <div>
+        <h2>Instagram: thiết lập, nội dung và nếp làm việc</h2>
+        <p class="lede">Instagram là nơi khách xem kỹ sản phẩm, đọc feedback và quyết định mua. Mục tiêu: người mới vào trang hiểu solme là gì trong 3 giây.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-bottom:14px">1. Thiết lập trang</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Mục</th><th>Nội dung điền</th><th>Lý do</th></tr></thead>
+        <tbody>
+          <tr><td>Tên hiển thị</td><td><b>solme | Túi vải handmade</b></td><td>Instagram tìm kiếm theo trường này, có từ khoá "túi vải handmade" thì khách gõ tìm sẽ thấy.</td></tr>
+          <tr><td>Username</td><td><b>@solme.bags</b></td><td>Giống hệt TikTok và Shopee để khách tìm một lần là ra.</td></tr>
+          <tr><td>Ảnh đại diện</td><td>Monogram "s" chữ mận trên nền hồng, tròn</td><td>Đọc được ở cỡ rất nhỏ trong danh sách bình luận.</td></tr>
+          <tr><td>Danh mục</td><td>Cửa hàng túi xách hoặc Nhà thiết kế thời trang</td><td>Hiện dưới tên, giúp khách biết ngay shop bán gì.</td></tr>
+          <tr><td>Liên kết</td><td>Trang tổng hợp (Shopee, TikTok Shop, form thêu tên)</td><td>Instagram chỉ cho 1 đường link chính, nên dùng trang gom link.</td></tr>
+          <tr><td>Nút liên hệ</td><td>Nhắn tin, Email</td><td>Khách hỏi giá thường nhắn trước khi mua.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid g2" style="margin-top:18px">
+      <div class="panel stack">
+        <span class="eyebrow">Bio (còn dưới 150 ký tự)</span>
+        <div class="cap-box" id="bio1">solme · túi vải handmade 🌷
+Mỗi chiếc túi, một tâm hồn.
+🧵 May tay · thêu tên theo yêu cầu
+🎀 Đi học · đi làm · đi chơi · đi xa
+👇 Đặt hàng ở link</div>
+        <button class="copy" type="button" data-target="bio1">Sao chép bio</button>
+      </div>
+      <div class="panel stack">
+        <span class="eyebrow">3 bài ghim đầu trang</span>
+        <ol class="small" style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>Bài giới thiệu:</b> carousel "solme là ai", 5 ảnh: câu chuyện tên, người may, 3 vải, 5 mẫu, cách đặt hàng.</li>
+          <li><b>Bài bán chạy:</b> Reels hay nhất về tote "Dịu" (đổi khi có video mới tốt hơn).</li>
+          <li><b>Bài bằng chứng:</b> carousel gom feedback của 6 khách đầu tiên.</li>
+        </ol>
+      </div>
+    </div>
+
+    <h3 style="margin:36px 0 14px">2. Highlight: 6 mục, thứ tự cố định</h3>
+    <div class="grid g3">
+      <div class="panel stack"><div style="display:flex;gap:10px"><div class="mono" style="width:56px;height:56px;background:var(--rose);color:var(--plum)"><b style="font-family:var(--f-display);font-size:22px">1</b></div><div><b>Bắt đầu từ đây</b><p class="small muted">Hướng dẫn chọn túi theo dịp</p></div></div><p class="small">Gồm 5 story: 8 dịp, chọn theo đồ cần đựng, bảng kích thước, bảng màu vải, cách đặt hàng.</p></div>
+      <div class="panel stack"><div style="display:flex;gap:10px"><div class="mono" style="width:56px;height:56px;background:var(--plum);color:var(--rose)"><b style="font-family:var(--f-display);font-size:22px">2</b></div><div><b>Feedback</b><p class="small muted">Bằng chứng khách hài lòng</p></div></div><p class="small">Chụp màn hình tin nhắn (che tên), ảnh khách tag, video khách mở hộp. Thêm ngay trong ngày nhận được.</p></div>
+      <div class="panel stack"><div style="display:flex;gap:10px"><div class="mono" style="width:56px;height:56px;background:var(--milk);color:var(--plum);border:1px solid var(--line)"><b style="font-family:var(--f-display);font-size:22px">3</b></div><div><b>Đóng đơn</b><p class="small muted">Cảnh gói hàng mỗi ngày</p></div></div><p class="small">Video 5–10 giây gói từng đơn. Khách thấy đơn của mình được chăm chút nên tin hơn.</p></div>
+      <div class="panel stack"><div style="display:flex;gap:10px"><div class="mono" style="width:56px;height:56px;background:var(--apricot);color:var(--cocoa)"><b style="font-family:var(--f-display);font-size:22px">4</b></div><div><b>Thêu tên</b><p class="small muted">Cách đặt và mẫu chữ</p></div></div><p class="small">Bảng mẫu chữ (3 kiểu), màu chỉ (mận, mơ), giới hạn 8 ký tự, thời gian làm thêm 1–2 ngày.</p></div>
+      <div class="panel stack"><div style="display:flex;gap:10px"><div class="mono" style="width:56px;height:56px;background:var(--blush);color:var(--plum)"><b style="font-family:var(--f-display);font-size:22px">5</b></div><div><b>Người may</b><p class="small muted">Hậu trường xưởng</p></div></div><p class="small">Giới thiệu từng người may: tên, mẫu túi hay làm, và một chi tiết nhỏ về họ.</p></div>
+      <div class="panel stack"><div style="display:flex;gap:10px"><div class="mono" style="width:56px;height:56px;background:var(--cocoa);color:var(--apricot)"><b style="font-family:var(--f-display);font-size:22px">6</b></div><div><b>Hỏi đáp</b><p class="small muted">Giặt, đổi trả, giao hàng</p></div></div><p class="small">Trả lời các câu hay hỏi nhất: giặt thế nào, đổi trả trong bao lâu, ship mấy ngày.</p></div>
+    </div>
+    <p class="note" style="margin-top:14px">Ảnh bìa highlight: hình tròn một màu thương hiệu, chữ số hoặc biểu tượng nhỏ ở giữa, không dùng ảnh thật để các vòng tròn trông đồng bộ.</p>
+
+    <h3 style="margin:36px 0 14px">3. Kích thước và vùng an toàn</h3>
+    <div class="grid g2" style="align-items:start">
+      <div class="tbl-wrap">
+        <table class="tnum">
+          <thead><tr><th>Định dạng</th><th>Kích thước</th><th>Độ dài, số lượng</th></tr></thead>
+          <tbody>
+            <tr><td>Ảnh feed</td><td>1080 × 1350 (4:5)</td><td>1 ảnh</td></tr>
+            <tr><td>Carousel</td><td>1080 × 1350 (4:5)</td><td>5–10 ảnh</td></tr>
+            <tr><td>Reels</td><td>1080 × 1920 (9:16)</td><td>7–15 giây</td></tr>
+            <tr><td>Story</td><td>1080 × 1920 (9:16)</td><td>5–10 giây mỗi đoạn</td></tr>
+            <tr><td>Ảnh bìa Reels</td><td>1080 × 1920, nội dung nằm ở giữa</td><td>Chữ cao ≤ 3 dòng</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel stack">
+        <span class="eyebrow">Ảnh bìa Reels: phần nào hiện trên lưới</span>
+        <div style="display:flex;justify-content:center">
+          <div style="width:150px;aspect-ratio:9/16;background:var(--soft);border:1px solid var(--line);border-radius:10px;position:relative;display:flex;align-items:center;justify-content:center">
+            <div style="width:100%;aspect-ratio:3/4;border:2px dashed var(--accent);display:flex;align-items:center;justify-content:center;text-align:center;font-family:var(--f-display);font-size:15px;font-weight:600;color:var(--accent);line-height:1.15;padding:4px">1 túi<br>8 dịp</div>
+            <span style="position:absolute;top:6px;left:0;right:0;text-align:center;font-size:10px;color:var(--muted)">nền</span>
+          </div>
+        </div>
+        <p class="small muted">Lưới trang cá nhân cắt ảnh bìa thành khung 3:4. Chữ và sản phẩm phải nằm gọn trong khung nét đứt ở giữa, nếu không sẽ bị cắt mất.</p>
+      </div>
+    </div>
+
+    <h3 style="margin:36px 0 14px">4. Lịch đăng một tuần cố định</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Ngày</th><th>Giờ</th><th>Định dạng</th><th>Nhóm nội dung</th><th>Ví dụ</th></tr></thead>
+        <tbody>
+          <tr><td><b>Thứ 2</b></td><td>20:00</td><td>Reels</td><td>May túi</td><td>"Từ 1 mét vải thành tote Dịu"</td></tr>
+          <tr><td><b>Thứ 4</b></td><td>12:30</td><td>Carousel</td><td>Sản phẩm</td><td>"Tote Dịu đựng được gì": 6 ảnh từng món</td></tr>
+          <tr><td><b>Thứ 6</b></td><td>20:00</td><td>Reels</td><td>Đóng đơn</td><td>"Gói đơn thêu tên cho Trang"</td></tr>
+          <tr><td><b>Chủ nhật</b></td><td>19:30</td><td>Ảnh đơn hoặc carousel</td><td>Khách hàng / Xưởng</td><td>Gom feedback tuần, hoặc giới thiệu người may</td></tr>
+          <tr><td>Hằng ngày</td><td>3 khung</td><td>Story</td><td>Đời thường</td><td>Sáng, trưa, tối (xem mục 6)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin:36px 0 14px">5. Ba mẫu carousel làm đi làm lại</h3>
+    <div class="grid g3">
+      <article class="panel script">
+        <div class="kv"><span class="pill">Sản phẩm</span><span class="pill">8 ảnh</span></div>
+        <p class="hook">"1 chiếc túi, 8 dịp"</p>
+        <ol>
+          <li>Bìa: túi một mình, chữ "1 túi, 8 dịp" (chữ Fraunces nghiêng)</li>
+          <li>Đi học: túi cùng sách, laptop</li>
+          <li>Đi làm: túi cùng blazer, sạc</li>
+          <li>Cà phê: túi trên bàn quán</li>
+          <li>Đi chợ: túi gập gọn rồi bung ra</li>
+          <li>Gym: bình nước, đồ ướt</li>
+          <li>Du lịch: túi cùng vali</li>
+          <li>Chốt: giá, link, "thêu tên +30k"</li>
+        </ol>
+      </article>
+      <article class="panel script">
+        <div class="kv"><span class="pill">Sản phẩm</span><span class="pill">7 ảnh</span></div>
+        <p class="hook">"Trong túi Linh có gì?"</p>
+        <ol>
+          <li>Bìa: túi mở, đồ lấp ló</li>
+          <li>Flatlay toàn bộ đồ</li>
+          <li>Cận laptop 14" vừa ngăn</li>
+          <li>Cận ngăn khoá đựng thẻ, chìa</li>
+          <li>Cận bình nước bên hông</li>
+          <li>Cận quai đeo vai</li>
+          <li>Chốt: "Bạn mang gì mỗi ngày? Kể solme nghe 🌷"</li>
+        </ol>
+      </article>
+      <article class="panel script">
+        <div class="kv"><span class="pill">Khách hàng</span><span class="pill">6 ảnh</span></div>
+        <p class="hook">"Khách nói gì về solme"</p>
+        <ol>
+          <li>Bìa: "6 lời nhắn tuần này"</li>
+          <li>4 ảnh chụp màn hình feedback (mỗi ảnh 1–2 tin, đã che tên)</li>
+          <li>Ảnh khách đeo túi (đã hỏi phép)</li>
+          <li>Chốt: link đặt hàng, mã giảm cho đơn sau</li>
+        </ol>
+      </article>
+    </div>
+
+    <h3 style="margin:36px 0 14px">6. Story mỗi ngày: 3 khung</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Khung</th><th>Làm gì</th><th>Sticker gợi ý</th></tr></thead>
+        <tbody>
+          <tr><td><b>Sáng (9:00)</b></td><td>Cảnh xưởng đầu ngày: cắt vải, xếp đơn, tách cà phê cạnh máy may</td><td>Câu hỏi: "Hôm nay bạn mang túi gì?"</td></tr>
+          <tr><td><b>Trưa (12:30)</b></td><td>Đăng lại story khách tag hoặc ảnh feedback</td><td>Bình chọn: 2 màu vải cho mẫu tiếp theo</td></tr>
+          <tr><td><b>Tối (21:00)</b></td><td>Cảnh đóng đơn hoặc báo hôm nay bán, còn bao nhiêu túi</td><td>Đếm ngược ngày mở bán lô mới</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin:36px 0 14px">7. Công thức viết caption</h3>
+    <div class="grid g2">
+      <div class="panel stack">
+        <ol class="small" style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px">
+          <li><b>Dòng 1 (hook):</b> một câu dưới 60 ký tự, hiện trước chữ "xem thêm". Ví dụ: "Túi này đựng vừa cả laptop lẫn bình nước 🌷"</li>
+          <li><b>Thân bài (2–3 câu):</b> thông tin cụ thể: kích thước, vải, đựng được gì.</li>
+          <li><b>Lời kêu gọi:</b> một việc duy nhất: lưu bài, hoặc bình luận, hoặc bấm link.</li>
+          <li><b>Hashtag:</b> 5 cái, đặt ở bình luận đầu tiên hoặc cuối bài.</li>
+        </ol>
+        <p class="small muted">Giọng văn xem lại phần "Nên viết / Tránh viết". Mỗi caption có một emoji ở dòng đầu là đủ.</p>
+      </div>
+      <div class="stack">
+        <div class="cap-box" id="cap3">Túi đi làm mà đựng vừa cả laptop 14" lẫn bình nước? 🌷
+
+Tote "Dịu" của solme có ngăn khoá trong để thẻ, chìa khoá, quai 60cm đeo vai được cả khi mặc áo khoác. Gập lại còn vừa lòng bàn tay.
+
+Lưu bài này để chọn túi cho tuần sau nhé 🎀
+
+#solmebags #tuivaihandmade #tuitote #tuidilam #tuicaro</div>
+        <button class="copy" type="button" data-target="cap3">Sao chép caption</button>
+      </div>
+    </div>
+
+    <h3 style="margin:36px 0 14px">8. Mẫu trả lời tin nhắn</h3>
+    <div class="grid g2">
+      <div class="panel stack"><span class="eyebrow">Hỏi giá</span><div class="cap-box" id="dm1">Chào bạn 🌷 Tote "Dịu" giá 320.000đ, kích thước 38 × 34 × 10cm, vừa laptop 14". Thêu tên thêm 30.000đ. Bạn dùng túi để đi học hay đi làm để solme gợi ý mẫu hợp hơn nha?</div><button class="copy" type="button" data-target="dm1">Sao chép</button></div>
+      <div class="panel stack"><span class="eyebrow">Hỏi giao hàng</span><div class="cap-box" id="dm2">Solme giao toàn quốc, nội thành 1–2 ngày, tỉnh khác 2–4 ngày. Đơn thêu tên cần thêm 1–2 ngày để may xong nha bạn 🎀</div><button class="copy" type="button" data-target="dm2">Sao chép</button></div>
+      <div class="panel stack"><span class="eyebrow">Hỏi đổi trả</span><div class="cap-box" id="dm3">Nếu đường may có lỗi, solme sửa hoặc đổi mới miễn phí trong 30 ngày. Bạn gửi giúp solme ảnh chỗ lỗi và mã đơn nhé 🌷</div><button class="copy" type="button" data-target="dm3">Sao chép</button></div>
+      <div class="panel stack"><span class="eyebrow">Nhờ khách đăng ảnh</span><div class="cap-box" id="dm4">Cảm ơn bạn đã chọn solme 🌷 Nếu thích, bạn chụp túi rồi tag @solme.bags để solme đăng lại trên story nha. Mã giảm 10% cho đơn sau là SOLME10 🎀</div><button class="copy" type="button" data-target="dm4">Sao chép</button></div>
+    </div>
+
+    <h3 style="margin:36px 0 14px">9. Thói quen mỗi ngày: 20 phút</h3>
+    <div class="steps">
+      <div class="step"><b>Trả lời</b><p class="small muted">Bình luận và tin nhắn trong vòng 1 giờ.</p></div>
+      <div class="step"><b>Đăng lại</b><p class="small muted">Story của khách tag solme, kèm lời cảm ơn.</p></div>
+      <div class="step"><b>Ghim</b><p class="small muted">Ghim bình luận hay nhất dưới mỗi bài.</p></div>
+      <div class="step"><b>Thăm</b><p class="small muted">Xem và thả tim 10 trang khách hoặc trang cùng ngành.</p></div>
+      <div class="step"><b>Lưu</b><p class="small muted">Lưu feedback mới vào highlight.</p></div>
+    </div>
+
+    <h3 style="margin:36px 0 14px">10. Chỉ số theo dõi hằng tuần</h3>
+    <div class="tbl-wrap">
+      <table class="tnum">
+        <thead><tr><th>Chỉ số</th><th>Xem ở đâu</th><th>Mục tiêu sau 90 ngày</th><th>Nếu thấp thì làm gì</th></tr></thead>
+        <tbody>
+          <tr><td>Người theo dõi</td><td>Trang cá nhân</td><td>2.000</td><td>Tăng số Reels, đổi hook 3 giây đầu</td></tr>
+          <tr><td>Lượt lưu mỗi bài</td><td>Thông tin chi tiết bài</td><td>≥ 3% lượt tiếp cận</td><td>Thêm thông tin hữu ích: kích thước, đựng được gì</td></tr>
+          <tr><td>Lượt chia sẻ mỗi Reels</td><td>Thông tin chi tiết Reels</td><td>≥ 1% lượt xem</td><td>Làm nội dung dễ gửi bạn: "tặng bạn thân"</td></tr>
+          <tr><td>Lượt vào trang cá nhân</td><td>Tổng quan</td><td>300 mỗi tuần</td><td>Thêm lời kêu gọi "xem thêm ở trang"</td></tr>
+          <tr><td>Bấm link</td><td>Tổng quan</td><td>5% lượt vào trang</td><td>Ghi rõ link trong bio và bài ghim</td></tr>
+          <tr><td>Tin nhắn hỏi mua</td><td>Hộp thư</td><td>20 mỗi tuần</td><td>Ghi giá và kích thước trong caption</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted" style="margin-top:10px">Mục tiêu là ước tính cho shop mới. Sau 4 tuần có số thật thì nên điều chỉnh lại.</p>
+  </div>
+</section>
+
+<!-- TikTok chi tiết -->
+<section id="tiktok">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band ging-plum"></div><span class="eyebrow">Phần 3 · TikTok chi tiết</span></div>
+      <div>
+        <h2>TikTok: video, hook và kế hoạch đăng</h2>
+        <p class="lede">TikTok là nơi khách mới tìm thấy solme. Một video hay có thể đưa shop đến hàng nghìn người chưa từng nghe tên. Việc chính ở đây là giữ người xem ở lại qua 3 giây đầu.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-bottom:14px">1. Thiết lập tài khoản</h3>
+    <div class="grid g2">
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Mục</th><th>Nội dung điền</th></tr></thead>
+          <tbody>
+            <tr><td>Tên hiển thị</td><td><b>solme | Túi vải handmade</b></td></tr>
+            <tr><td>Username</td><td><b>@solme.bags</b></td></tr>
+            <tr><td>Ảnh đại diện</td><td>Monogram "s", giống Instagram</td></tr>
+            <tr><td>Liên kết</td><td>Link Shopee hoặc TikTok Shop</td></tr>
+            <tr><td>Video giới thiệu ghim</td><td>Video 15 giây "solme là ai"</td></tr>
+            <tr><td>Ghim 3 video</td><td>Video mở hộp, video may túi, video "túi đựng gì"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel stack">
+        <span class="eyebrow">Bio (dưới 80 ký tự)</span>
+        <div class="cap-box" id="bio2">Túi vải may tay 🌷 Mỗi chiếc túi, một tâm hồn. Thêu tên theo yêu cầu 👇</div>
+        <button class="copy" type="button" data-target="bio2">Sao chép bio</button>
+        <p class="small muted">TikTok cho bio ngắn. Đặt tên shop, một câu khẩu hiệu và lời kêu gọi vào link.</p>
+      </div>
+    </div>
+
+    <h3 style="margin:36px 0 14px">2. Cấu trúc một video 15 giây</h3>
+    <div class="tbl-wrap">
+      <table class="tnum">
+        <thead><tr><th>Giây</th><th>Phần</th><th>Làm gì</th><th>Chữ trên màn hình</th></tr></thead>
+        <tbody>
+          <tr><td><b>0–2</b></td><td>Hook</td><td>Cảnh ấn tượng nhất, đặt lên đầu: túi bung ra, tay thêu chữ, mở hộp</td><td>Câu hook, tối đa 8 từ</td></tr>
+          <tr><td><b>2–10</b></td><td>Thân</td><td>Chuỗi cảnh ngắn 1–2 giây mỗi cảnh, đổi góc quay</td><td>Mỗi cảnh một ý (kích thước, vải, giá)</td></tr>
+          <tr><td><b>10–13</b></td><td>Kết quả</td><td>Cảnh sản phẩm hoàn chỉnh, đẹp nhất</td><td>Tên mẫu túi</td></tr>
+          <tr><td><b>13–15</b></td><td>Kêu gọi</td><td>Giữ khung hình đẹp, có thể lặp lại cảnh đầu để video quay vòng</td><td>"Link ở bio 🌷"</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid g3" style="margin-top:16px">
+      <div class="panel stack"><span class="eyebrow">Khung hình</span><p class="small">1080 × 1920 (9:16). Chữ nằm trong vùng giữa, cách mép trên 150px, mép dưới 400px để không bị nút bấm che.</p></div>
+      <div class="panel stack"><span class="eyebrow">Chữ trên video</span><p class="small">Font Be Vietnam Pro đậm, trắng có viền mận mỏng hoặc chữ mận trên nền hồng sữa. Cỡ đủ đọc trên màn hình điện thoại, không quá 2 dòng.</p></div>
+      <div class="panel stack"><span class="eyebrow">Âm thanh</span><p class="small">Giữ tiếng máy may, kéo cắt, giấy gói làm nền. Thêm một bài nhạc đang thịnh hành vặn nhỏ. Video ASMR đóng đơn thì chỉ dùng tiếng thật.</p></div>
+    </div>
+
+    <h3 style="margin:36px 0 14px">3. 10 công thức hook cho 3 giây đầu</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Công thức</th><th>Ví dụ cho solme</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Câu hỏi đánh vào nỗi đau</td><td>"Sao túi nào của bạn cũng không đựng vừa laptop?"</td></tr>
+          <tr><td>2</td><td>Con số cụ thể</td><td>"1 chiếc túi, 8 dịp, 320 nghìn"</td></tr>
+          <tr><td>3</td><td>Quá trình biến đổi</td><td>"1 mét vải caro thành chiếc túi này"</td></tr>
+          <tr><td>4</td><td>Thử thách đồ đạc</td><td>"Thử nhét hết đồ vào túi 38cm xem được bao nhiêu món"</td></tr>
+          <tr><td>5</td><td>Hậu trường</td><td>"Thợ may kiểm tra từng đường chỉ trước khi gửi bạn"</td></tr>
+          <tr><td>6</td><td>Gửi tặng ai đó</td><td>"Gửi cho bạn thân sắp sinh nhật"</td></tr>
+          <tr><td>7</td><td>So sánh trước và sau</td><td>"Túi nilon vs túi solme khi đi chợ"</td></tr>
+          <tr><td>8</td><td>Khoe chi tiết nhỏ</td><td>"Chiếc túi này có móc chìa khoá ẩn bên trong"</td></tr>
+          <tr><td>9</td><td>Hé lộ bất ngờ</td><td>"Mở hộp ra mặt trong là caro hồng"</td></tr>
+          <tr><td>10</td><td>Trả lời bình luận</td><td>"Trả lời @Linh: có thêu tên được không? Được nè 🌷"</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin:36px 0 14px">4. Sáu series làm đi làm lại</h3>
+    <div class="grid g3">
+      <div class="panel stack"><span class="pill" style="align-self:flex-start">Mỗi tuần 2 video</span><b>Gói đơn số #</b><p class="small muted">Đóng từng đơn, có số thứ tự. Khách thấy shop thật sự bán được hàng.</p></div>
+      <div class="panel stack"><span class="pill" style="align-self:flex-start">Mỗi tuần 1 video</span><b>Túi này đựng gì?</b><p class="small muted">Nhét đồ vào từng mẫu, mỗi món một nhịp nhạc. Dạng dễ xem hết video nhất.</p></div>
+      <div class="panel stack"><span class="pill" style="align-self:flex-start">Mỗi tuần 1 video</span><b>Từ vải thành túi</b><p class="small muted">Cắt, may, lộn, thêu. Không cần lời, chỉ cần tiếng máy may.</p></div>
+      <div class="panel stack"><span class="pill" style="align-self:flex-start">2 tuần 1 video</span><b>Thợ may kể chuyện</b><p class="small muted">Một thợ may nói 15 giây về chiếc túi mình thích làm nhất.</p></div>
+      <div class="panel stack"><span class="pill" style="align-self:flex-start">2 tuần 1 video</span><b>Thử thách 8 dịp</b><p class="small muted">Một túi, mỗi cảnh một dịp, chuyển cảnh theo nhịp nhạc.</p></div>
+      <div class="panel stack"><span class="pill" style="align-self:flex-start">Khi có phản hồi</span><b>Khách nói gì</b><p class="small muted">Video khách mở hộp hoặc đọc nhận xét. Hỏi phép khách trước khi đăng.</p></div>
+    </div>
+
+    <h3 style="margin:36px 0 14px">5. Lịch đăng 4 tuần, 4–5 video mỗi tuần</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Tuần</th><th>Thứ 2</th><th>Thứ 3</th><th>Thứ 5</th><th>Thứ 7</th><th>Chủ nhật</th></tr></thead>
+        <tbody>
+          <tr><td><b>1</b></td><td>Từ vải thành túi</td><td>Giới thiệu solme là ai (15s)</td><td>Túi này đựng gì? (Dịu)</td><td>Hậu trường: chọn vải</td><td>Thử thách 8 dịp</td></tr>
+          <tr><td><b>2</b></td><td>Thêu tên thử cho bạn thân</td><td>Túi laptop "Vững" đựng gì?</td><td>Từ vải thành túi (teddy)</td><td>Hậu trường: kiểm tra chất lượng</td><td>Đếm ngược mở bán</td></tr>
+          <tr><td><b>3</b></td><td>solme mở bán</td><td>Gói đơn số 001</td><td>Túi này đựng gì? (Xinh)</td><td>Gói đơn thêu tên</td><td>Khách nói gì</td></tr>
+          <tr><td><b>4</b></td><td>So sánh túi nilon và túi solme</td><td>Thợ may kể chuyện</td><td>Gói đơn số 020</td><td>Thử thách 8 dịp (bản 2)</td><td>Bình chọn màu vải tiếp theo</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted" style="margin-top:10px">Giờ đăng gợi ý: 12:00–13:00 và 19:30–22:00. Sau 4 tuần xem phần phân tích người xem trong TikTok để đổi giờ theo khách thật.</p>
+
+    <h3 style="margin:36px 0 14px">6. Quay một buổi, ra 10 video</h3>
+    <div class="grid g2" style="align-items:start">
+      <div class="panel stack">
+        <span class="eyebrow">Chuẩn bị (30 phút)</span>
+        <ul class="small" style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px">
+          <li>Điện thoại gắn chân đế trên cao để quay từ trên xuống.</li>
+          <li>Bàn gỗ sáng cạnh cửa sổ, quay từ 9:00 đến 11:00.</li>
+          <li>Khăn hồng sữa, giấy pelure, 3 túi đã may xong, bình nước, laptop, sổ.</li>
+          <li>Tay gọn, móng nude, không đeo nhiều trang sức.</li>
+          <li>Lau ống kính, tắt flash, bật khoá phơi sáng.</li>
+        </ul>
+      </div>
+      <div class="panel stack">
+        <span class="eyebrow">Danh sách cảnh cần quay (mỗi cảnh 5–10 giây)</span>
+        <ol class="small" style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px">
+          <li>Tay vuốt tấm vải trên bàn</li>
+          <li>Cắt vải, cận kéo</li>
+          <li>Máy may chạy đường viền</li>
+          <li>Lộn túi ra</li>
+          <li>Kẹp nhãn dệt</li>
+          <li>Thêu chữ cận</li>
+          <li>Túi đứng một mình xoay 360°</li>
+          <li>Nhét đồ vào từng món</li>
+          <li>Kéo khoá, móc chìa</li>
+          <li>Gập tote gọn, bung ra</li>
+          <li>Mở hộp, giấy pelure, sticker</li>
+          <li>Xách túi lên vai trước cửa sổ</li>
+        </ol>
+      </div>
+    </div>
+    <p class="note" style="margin-top:14px">Quay dư cảnh để có thể dựng nhiều video từ cùng một buổi: cảnh "túi đựng gì" dùng cho cả TikTok và Instagram Reels. Khi đăng Instagram, tải bản không có logo TikTok và đổi caption cho phù hợp.</p>
+
+    <h3 style="margin:36px 0 14px">7. Caption, hashtag và từ khoá</h3>
+    <div class="grid g2">
+      <div class="stack">
+        <div class="cap-box" id="cap4">Túi này đựng được bao nhiêu thứ? 🌷 Laptop 14", sổ, bình nước, ví, ô gấp. Tote "Dịu" 38 × 34 × 10cm, 320.000đ, thêu tên +30.000đ. Link ở bio nha 🎀
+#solmebags #tuivaihandmade #tuitote #tuidilam #gocdoanhnghiep</div>
+        <button class="copy" type="button" data-target="cap4">Sao chép caption</button>
+      </div>
+      <div class="panel stack">
+        <ul class="small" style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px">
+          <li><b>3–5 hashtag</b> mỗi video: 1 tên shop, 2 sản phẩm, 1–2 theo dịp.</li>
+          <li><b>Từ khoá trong caption và chữ trên video:</b> "túi tote vải", "túi đi làm", "túi laptop handmade", "quà sinh nhật bạn thân". TikTok tìm kiếm theo các cụm này.</li>
+          <li><b>Bình luận ghim:</b> bảng giá ngắn gọn và cách đặt hàng.</li>
+          <li><b>Trả lời bình luận bằng video</b> khi câu hỏi hay: một video có thể thành hai.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin:36px 0 14px">8. Livestream hằng tuần 30 phút</h3>
+    <div class="tbl-wrap">
+      <table class="tnum">
+        <thead><tr><th>Phút</th><th>Nội dung</th></tr></thead>
+        <tbody>
+          <tr><td>0–5</td><td>Chào, giới thiệu hôm nay may gì. Cắt vải ngay trên live.</td></tr>
+          <tr><td>5–15</td><td>May từng bước, trả lời bình luận, đo kích thước túi khi được hỏi.</td></tr>
+          <tr><td>15–25</td><td>Giới thiệu 3 mẫu, nhét đồ vào túi, hướng dẫn đặt thêu tên.</td></tr>
+          <tr><td>25–30</td><td>Bốc thăm 1 khách nhận thêu tên miễn phí, nhắc link đặt hàng.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted" style="margin-top:10px">Giờ đề xuất: tối thứ 6 từ 20:30. Livestream đầu tiên chỉ cần 10 người xem, quan trọng là tạo thói quen.</p>
+
+    <h3 style="margin:36px 0 14px">9. Chỉ số theo dõi và cách sửa</h3>
+    <div class="tbl-wrap">
+      <table class="tnum">
+        <thead><tr><th>Chỉ số</th><th>Mục tiêu</th><th>Nếu thấp thì làm gì</th></tr></thead>
+        <tbody>
+          <tr><td>Tỉ lệ xem qua 3 giây</td><td>≥ 50%</td><td>Đưa cảnh ấn tượng nhất lên đầu, thử một hook khác trên cùng đoạn quay.</td></tr>
+          <tr><td>Tỉ lệ xem hết video</td><td>≥ 25%</td><td>Cắt ngắn xuống 7–10 giây, bỏ cảnh chậm.</td></tr>
+          <tr><td>Lượt lưu</td><td>≥ 2% lượt xem</td><td>Thêm thông tin đáng lưu: kích thước, bảng giá, cách chọn túi.</td></tr>
+          <tr><td>Lượt chia sẻ</td><td>≥ 1% lượt xem</td><td>Làm video "tặng bạn thân", "gửi người hay quên chìa khoá".</td></tr>
+          <tr><td>Bấm vào link, giỏ hàng</td><td>Có đơn mỗi tuần</td><td>Ghim bình luận có giá và hướng dẫn mua.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note" style="margin-top:14px">
+      <b>Quy tắc khi video không lên:</b> không xoá. Quay lại cùng đoạn phim, đổi 3 giây đầu và chữ hook, đăng lại sau 3–5 ngày. Thử 3 hook cho một nội dung trước khi kết luận nội dung đó không hợp.
+    </div>
+
+    <h3 style="margin:36px 0 14px">10. Dùng chung Instagram và TikTok</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th></th><th>Instagram</th><th>TikTok</th></tr></thead>
+        <tbody>
+          <tr><td><b>Vai trò</b></td><td>Xem kỹ sản phẩm, tin tưởng, đặt hàng</td><td>Khách mới tìm thấy shop</td></tr>
+          <tr><td><b>Phong cách</b></td><td>Ảnh đẹp, bố cục gọn, màu đồng bộ</td><td>Tự nhiên, nhanh, hậu trường</td></tr>
+          <tr><td><b>Độ dài</b></td><td>Reels 7–15 giây, carousel 5–10 ảnh</td><td>Video 7–20 giây, livestream 30 phút</td></tr>
+          <tr><td><b>Chữ</b></td><td>Caption dài hơn, có thông tin</td><td>Caption ngắn, thông tin nằm trong video</td></tr>
+          <tr><td><b>Việc dùng chung</b></td><td colspan="2">Cùng đoạn quay, cùng giọng văn, cùng @solme.bags, cùng bảng giá và mã SOLME10. Mỗi nền tảng có caption và ảnh bìa riêng.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Collection -->
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band ging-plum"></div><span class="eyebrow">Phụ lục</span></div>
+      <div>
+        <h2>Bộ sưu tập đầu tiên: "Chương 01 · Tâm hồn nhỏ"</h2>
+        <p class="lede">5 mẫu, 3 loại vải. Ít mẫu thì dễ quay, dễ tồn kho và khách nhớ nhanh hơn.</p>
+      </div>
+    </div>
+    <div class="tbl-wrap">
+      <table class="tnum">
+        <thead><tr><th>Mẫu</th><th>Vải</th><th>Kích thước</th><th>Giá bán</th></tr></thead>
+        <tbody>
+          <tr><td><b>Tote "Dịu"</b></td><td>Caro hồng, lót canvas</td><td>38 × 34 × 10cm</td><td>320.000đ</td></tr>
+          <tr><td><b>Túi laptop "Vững"</b></td><td>Caro mận, chần bông</td><td>Laptop 13–14"</td><td>290.000đ</td></tr>
+          <tr><td><b>Pouch "Xinh"</b></td><td>Caro hồng hoặc mận</td><td>20 × 12 × 8cm</td><td>160.000đ</td></tr>
+          <tr><td><b>Túi bình nước "Mát"</b></td><td>Caro hồng, lót chống thấm</td><td>Bình 500–750ml</td><td>150.000đ</td></tr>
+          <tr><td><b>Túi teddy "Ấm"</b></td><td>Teddy chấm thêu mận</td><td>34 × 30 × 10cm</td><td>420.000đ</td></tr>
+          <tr><td><b>Set "Hộp Solme"</b></td><td>Tote + pouch + túi bình nước</td><td>Hộp L</td><td>555.000đ <span class="muted">(lẻ 630k)</span></td></tr>
+          <tr><td>Thêu tên</td><td>Chỉ mận hoặc mơ, tối đa 8 ký tự</td><td></td><td>+30.000đ</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:14px">Mỗi mẫu mang tên một trạng thái của tâm hồn (dịu, vững, xinh, mát, ấm), để khách chọn túi theo tâm trạng của mình.</p>
+  </div>
+</section>
+
+<!-- 11. Làm thật -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="band" style="background:var(--apricot)"></div><span class="eyebrow">Phần 4 · Làm thật</span></div>
+      <div>
+        <h2>Biến "tiện lợi" thành việc cụ thể</h2>
+        <p class="lede">"Tiện lợi" chỉ thuyết phục khi khách nhìn thấy và tự thử được. Có ba bước: thiết kế từng mẫu theo dịp dùng, thử thật trước khi bán, và chạy theo kế hoạch 90 ngày.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-bottom:16px">Bước 1 · Bảng thiết kế từng mẫu</h3>
+    <div class="tbl-wrap">
+      <table class="tnum">
+        <thead><tr><th>Mẫu</th><th>Dùng cho dịp</th><th>Đựng vừa (đã đo)</th><th>Chi tiết tiện lợi</th></tr></thead>
+        <tbody>
+          <tr><td><b>Tote "Dịu"</b><br><span class="small muted">38 × 34 × 10cm</span></td><td>Đi học, đi làm, đi chợ</td><td>Laptop 14", sổ A5, bình 750ml, ô gấp, ví</td><td>Quai 60cm đeo vai · ngăn khoá trong 20 × 15cm · ngăn mở vừa điện thoại 6,7" · móc chìa · gập gọn bằng dây buộc</td></tr>
+          <tr><td><b>Túi laptop "Vững"</b><br><span class="small muted">36 × 26 × 3cm</span></td><td>Đi làm, cà phê làm việc</td><td>Laptop 13–14", sạc, chuột</td><td>Chần bông 5mm chống va · ngăn trước 20 × 18cm đựng sạc · khoá kéo 2 đầu · quai xách thu gọn</td></tr>
+          <tr><td><b>Pouch "Xinh"</b><br><span class="small muted">20 × 12 × 8cm</span></td><td>Cà phê, tiệc nhỏ, du lịch</td><td>Điện thoại, son, phấn, ví thẻ, tai nghe</td><td>Dây đeo chéo tháo rời, chỉnh dài 110–125cm · khi tháo dây thành túi mỹ phẩm · ngăn thẻ phía sau</td></tr>
+          <tr><td><b>Túi bình nước "Mát"</b><br><span class="small muted">Đáy Ø 9cm, cao 24cm</span></td><td>Gym, đi bơi, dã ngoại</td><td>Bình 500–750ml hoặc ly giữ nhiệt</td><td>Lót chống thấm · ngăn ngoài vừa điện thoại · quai dài đeo chéo hoặc móc vào tote "Dịu"</td></tr>
+          <tr><td><b>Túi teddy "Ấm"</b><br><span class="small muted">34 × 30 × 10cm</span></td><td>Đi chơi mùa lạnh, du lịch Đà Lạt, Sa Pa</td><td>Áo khoác mỏng, ví, máy ảnh nhỏ, sổ</td><td>Nút nam châm · ngăn khoá trong · lớp lót dày giữ dáng khi túi vơi</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted" style="margin-top:10px">Các mẫu ghép được với nhau: túi bình nước móc vào tote, pouch bỏ vừa ngăn trong túi laptop. Set "Hộp Solme" bán đúng ý này: một set dùng được cho cả tuần.</p>
+
+    <h3 style="margin-top:40px;margin-bottom:16px">Bước 2 · Thử tiện lợi trước khi bán</h3>
+    <div class="grid g3">
+      <div class="panel stack"><span class="eyebrow">Thử đựng đồ</span><p class="small">Bỏ đúng những món ghi ở cột "Đựng vừa" vào túi. Đồ phải vừa, kéo khoá được và túi không bị phồng méo. Chụp ảnh lại để làm hình sản phẩm.</p></div>
+      <div class="panel stack"><span class="eyebrow">Thử dùng 2 tuần</span><p class="small">Nhờ 5 người (bạn bè, đồng nghiệp) dùng mỗi mẫu trong 14 ngày, mỗi người một dịp khác nhau. Họ ghi lại mỗi lần thấy bất tiện, ví dụ "quai tuột vai", "không tìm thấy chìa".</p></div>
+      <div class="panel stack"><span class="eyebrow">Thử độ bền</span><p class="small">Treo 5kg vào quai trong 24 giờ. Giặt tay 5 lần. Kéo khoá 200 lần. Mẫu nào không đạt thì sửa rập trước khi may số lượng lớn.</p></div>
+    </div>
+    <p class="note" style="margin-top:14px">Những câu người thử nói, như "Đi gym bỏ bình nước vào là xong", chính là caption và feedback thật để dùng khi mở bán.</p>
+
+    <h3 style="margin-top:40px;margin-bottom:16px">Bước 3 · Kế hoạch 90 ngày</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Thời gian</th><th>Việc cần làm</th><th>Xong khi</th></tr></thead>
+        <tbody>
+          <tr><td><b>Tuần 1–2</b></td><td>Đăng ký handle @solme.bags trên mọi nền tảng · làm logo vector · mua vải mẫu 3 loại · may thử 5 mẫu</td><td>Có 5 túi mẫu và giữ được tên shop</td></tr>
+          <tr><td><b>Tuần 3–4</b></td><td>Cho 5 người dùng thử 2 tuần · sửa rập · đặt in nhãn dệt, nhãn giặt, thẻ treo, thiệp, sticker</td><td>Rập đã chốt, bao bì đã về</td></tr>
+          <tr><td><b>Tuần 5–6</b></td><td>May lô đầu 60 túi (mỗi mẫu 12) · chụp ảnh sản phẩm theo 8 dịp · mở gian hàng Shopee · bắt đầu tuần 1 của lịch đăng bài</td><td>Có hàng, có ảnh, có 8 bài đăng</td></tr>
+          <tr><td><b>Tuần 7–8</b></td><td>Đếm ngược · mở bán, 20 đơn đầu thêu tên miễn phí · quay video đóng mỗi đơn</td><td>30 đơn đầu tiên</td></tr>
+          <tr><td><b>Tuần 9–12</b></td><td>Đăng lại feedback · hỏi khách hay dùng túi vào dịp nào · may thêm mẫu bán chạy · bình chọn màu vải tiếp theo</td><td>100 đơn · 2.000 người theo dõi</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:40px;margin-bottom:16px">Vốn ban đầu ước tính</h3>
+    <div class="tbl-wrap">
+      <table class="tnum">
+        <thead><tr><th>Khoản</th><th>Chi tiết</th><th>Ước tính</th></tr></thead>
+        <tbody>
+          <tr><td>Vải</td><td>Caro cotton, teddy, canvas lót (khoảng 50m)</td><td>3 – 4,5 triệu</td></tr>
+          <tr><td>Phụ liệu</td><td>Khoá kéo, nam châm, móc, chỉ, bông chần</td><td>1 – 1,5 triệu</td></tr>
+          <tr><td>Bao bì</td><td>Nhãn, thẻ, thiệp, sticker, hộp cho 300 đơn</td><td>6 – 9 triệu</td></tr>
+          <tr><td>Thêu tên</td><td>Thuê thêu vi tính (10–20k/tên) hoặc thêu tay</td><td>0,5 – 1 triệu</td></tr>
+          <tr><td>Công may lô đầu</td><td>60 túi, nếu thuê thợ (bỏ qua nếu tự may)</td><td>3 – 5 triệu</td></tr>
+          <tr><td>Chụp ảnh, quảng cáo</td><td>Đạo cụ chụp, chạy quảng cáo bài mở bán</td><td>2 – 3 triệu</td></tr>
+          <tr><td><b>Tổng</b></td><td></td><td><b>15,5 – 24 triệu</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:14px">Đây là con số ước tính, chưa tính máy may. Giá vải và phụ liệu thay đổi theo nơi mua, nên hỏi 2–3 chỗ trước khi đặt. Có thể giảm vốn bao bì bằng hộp kraft trơn kèm con dấu logo, như đã nói ở phần Hộp.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">solme · sổ tay thương hiệu 1.1 · Lấy cảm hứng từ cách làm nội dung của @fearless_bags. Toàn bộ tên, logo, màu và câu chữ là thiết kế riêng cho Solme.</div>
+</footer>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var el = document.getElementById(btn.dataset.target);
+    var text = el.innerText;
+    var done = function(){ btn.textContent = 'Đã sao chép'; setTimeout(function(){ btn.textContent = 'Sao chép caption'; }, 1600); };
+    var fallback = function(){
+      var r = document.createRange(); r.selectNodeContents(el);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      btn.textContent = 'Đã chọn chữ, nhấn Ctrl/⌘+C';
+    };
+    try {
+      navigator.clipboard.writeText(text).then(done, fallback);
+    } catch(e){ fallback(); }
+  });
+});
+</script>
+
+</body></html>

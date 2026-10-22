@@ -26,7 +26,7 @@ export default function CreativeProjects() {
             <h3 style={{ textTransform: "none" }}>solme handmade bags</h3>
             <p>A brand for handmade fabric bags, built from scratch. The name joins <i>soul</i> and <i>Mely</i>. I wrote the brand book: positioning and target customer, logo and monogram, a 6-colour palette, type system, woven labels, hang tags, a mailer-box unboxing flow and an Instagram/TikTok content grid, benchmarked against Spain's Fearless Bags.</p>
             <div className="roles"><span>Brand book</span><span>Logo & palette</span><span>Labels & box</span><span>Social grid</span></div>
-            <a className="more" href="https://claude.ai/artifact/U6dt6nFT6P7aJxoGKpwJft" target="_blank" rel="noopener">View brand book ↗</a>
+            <a className="more" href="/solme-brand-book.html">View brand book ↗</a>
           </div>
         </article>
         <article className="proj big">
