@@ -12,6 +12,7 @@ export const metadata = {
   keywords: SITE.keywords,
   authors: [{ name: SITE.name, url: SITE.linkedin }],
   creator: SITE.name,
+  verification: { google: "dJ8LhRyY584-VPZc34FrXTeUAK0gATI8ypgwYfeLLTc" },
   alternates: { canonical: `${SITE_URL}/` },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
   openGraph: {
