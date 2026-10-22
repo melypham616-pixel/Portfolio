@@ -1,3 +1,5 @@
+import ContactForm from "@/components/ContactForm";
+
 export default function Contact() {
   return (
     <>
@@ -11,6 +13,7 @@ export default function Contact() {
         <div><span className="k">Phone</span><span className="v" id="ph">+84 933 348 395</span><button className="copy" type="button" id="copy-ph" data-target="ph">Copy</button></div>
         <div><span className="k">LinkedIn</span><a className="v" href="https://www.linkedin.com/in/myduyen1/" target="_blank" rel="noopener">linkedin.com/in/myduyen1</a></div>
       </div>
+      <ContactForm />
     </section>
     <footer>© 2026 Pham Thi My Duyen · Ho Chi Minh City</footer>
     </>
