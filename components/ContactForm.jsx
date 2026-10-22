@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 
-// Contact form posted to Formspree. Set NEXT_PUBLIC_FORMSPREE_ID (the part after /f/ in the form URL).
-const FORM_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID;
+// Contact form posted to Formspree. NEXT_PUBLIC_FORMSPREE_ID overrides the default form ID.
+const FORM_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID || "xkjoderq";
 
 export default function ContactForm() {
   const [status, setStatus] = useState("idle");
