@@ -1,6 +1,8 @@
+import Script from "next/script";
 import "./globals.css";
 import { SITE, SITE_URL } from "@/lib/site";
 
+const GA_ID = "G-B5GVKSSFXN";
 const OG_IMAGE = `${SITE_URL}/og-image.png`;
 
 export const metadata = {
@@ -52,7 +54,16 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500&family=Great+Vibes&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`}
+        </Script>
+      </body>
     </html>
   );
 }
