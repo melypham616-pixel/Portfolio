@@ -353,6 +353,12 @@ nav a:hover{text-decoration:underline;text-underline-offset:4px}
 .cw-how dt{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-top:4px}
 .cw-how dd{margin:0;color:var(--muted)}
 .cw-how ul{margin:0;padding-left:16px;display:grid;gap:2px}
+/* Line up each row (title, chart, Problem, What I did, Result) across cards in the same grid row */
+@supports (grid-template-rows:subgrid){
+  .cwins{row-gap:0}
+  .cwins>.cw{grid-row:span 10;grid-template-rows:subgrid;row-gap:8px;margin-bottom:14px}
+  .cw>.cw-how{grid-row:5 / span 6;grid-template-rows:subgrid;row-gap:4px}
+}
 @media (max-width:980px){.cwins{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.cwins{grid-template-columns:1fr}}
 
