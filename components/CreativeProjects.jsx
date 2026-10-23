@@ -53,7 +53,22 @@ export default function CreativeProjects() {
             <button className="more more-btn" type="button" id="open-set">View photo set (7) ↗</button>
           </div>
         </article>
-        <article className="proj full">
+        <article className="proj">
+          <div className="vis v-web v-art">
+            <div className="win">
+              <div className="bar"><i /><i /><i /><span className="url">theartofordinarythings.mely.io.vn</span></div>
+              <div className="pg"><span className="t">The Art of Ordinary Things</span><span className="sub">Art × Photography</span><img loading="lazy" decoding="async" src={asset("/images/the-art-of-ordinary-things.jpg")} alt="Hammershøi interior with sunlight, hero image of the site" /></div>
+            </div>
+          </div>
+          <div className="txt">
+            <span className="kind">Web design · Curation · 2026</span>
+            <h3>The Art of Ordinary Things</h3>
+            <p>An editorial website about finding art in everyday life. I designed the layout, curated public-domain paintings and documentary photos by theme and palette, and wrote short reflections, including notes on my own museum visits.</p>
+            <div className="roles"><span>Editorial layout</span><span>Curation</span><span>Writing</span></div>
+            <a className="more" href="https://theartofordinarythings.mely.io.vn/" target="_blank" rel="noopener">Visit the site ↗</a>
+          </div>
+        </article>
+        <article className="proj">
           <div className="vis v-care" aria-hidden="true"><span>noinghe.com</span></div>
           <div className="txt">
             <span className="kind">Non-profit website · 2023–2024</span>
