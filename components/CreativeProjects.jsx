@@ -69,6 +69,21 @@ export default function CreativeProjects() {
           </div>
         </article>
         <article className="proj">
+          <div className="vis v-web v-history">
+            <div className="win">
+              <div className="bar"><i /><i /><i /><span className="url">su.mely.io.vn</span></div>
+              <div className="pg"><span className="t">Lịch sử Việt Nam</span><span className="sub">Sử Ký Studio</span><img loading="lazy" decoding="async" src={asset("/images/su-ky-studio.jpg")} alt="Hero of the Lịch sử Việt Nam site, archival photo strips behind the title" /></div>
+            </div>
+          </div>
+          <div className="txt">
+            <span className="kind">Web design · Research · 2026</span>
+            <h3>Lịch sử Việt Nam</h3>
+            <p>A history website from Văn Lang to reunification in 1976. I structured it into six periods, a ribbon timeline of key milestones and longer reads with archival photos, and wrote short analyses on causes and consequences.</p>
+            <div className="roles"><span>Information design</span><span>Research</span><span>Writing</span></div>
+            <a className="more" href="https://su.mely.io.vn/" target="_blank" rel="noopener">Visit su.mely.io.vn ↗</a>
+          </div>
+        </article>
+        <article className="proj full">
           <div className="vis v-care" aria-hidden="true"><span>noinghe.com</span></div>
           <div className="txt">
             <span className="kind">Non-profit website · 2023–2024</span>

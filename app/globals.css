@@ -412,6 +412,9 @@ nav a:hover{text-decoration:underline;text-underline-offset:4px}
 .v-web .pg i+i{background:var(--orange)}
 .v-art{background:var(--ink)}
 .v-art .pg .t{font-family:var(--display);font-style:italic;font-size:clamp(18px,2.2vw,26px)}
+.v-history{background:#3a2f26}
+.v-history .pg .t{font-family:var(--display);font-size:clamp(18px,2.2vw,26px)}
+.v-history .pg img{object-position:30% center}
 /* visual 3: film strip */
 .v-film{background:var(--ink);pointer-events:auto;display:flex;align-items:center;gap:6px;padding:0 6%}
 .v-film::before,.v-film::after{content:"";position:absolute;left:0;right:0;height:10px;background:repeating-linear-gradient(90deg,transparent 0 8px,var(--paper) 8px 14px);opacity:.55}
@@ -419,6 +422,7 @@ nav a:hover{text-decoration:underline;text-underline-offset:4px}
 .v-film img{flex:1;min-width:0;aspect-ratio:3/4;object-fit:cover;display:block}
 /* visual 4/5: simple layouts */
 .v-care{background:var(--green);display:grid;place-items:center}
+.proj.full .v-care{aspect-ratio:21/5}
 .v-care span{font-family:var(--display);font-size:clamp(28px,4vw,40px);color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);padding:4px 14px;transform:rotate(-3deg)}
 .v-shop{background:var(--pink);display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:12% 8%}
 .v-shop i{display:block;background:var(--paper);border:1.5px solid var(--ink);position:relative}
